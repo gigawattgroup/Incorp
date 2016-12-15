@@ -2,7 +2,7 @@
 
     <div id="intro">
       <div class="container">
-        <h2>Registered agent service, entity formations, and corporate compliance.</h2>
+        <h2>RRRRRRRRegistered agent service, entity formations, and corporate compliance.</h2>
         <button type="button" class="btn btn-lg btn-info">Talk to an Expert</button>
       </div><!-- .container -->
       <div class="gradient"></div>
