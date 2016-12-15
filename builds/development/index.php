@@ -1,14 +1,14 @@
 <?php include_once('_header.php'); ?>
 
-    <div id="intro">
+    <section id="intro">
       <div class="container">
-        <h2>RRRRRRRRegistered agent service, entity formations, and corporate compliance.</h2>
+        <h2>Registered agent service, entity formations, and corporate compliance.</h2>
         <button type="button" class="btn btn-lg btn-info">Talk to an Expert</button>
       </div><!-- .container -->
       <div class="gradient"></div>
-    </div><!-- .jumbotron -->
+    </section><!-- .jumbotron -->
 
-    <div id="options">
+    <section id="options">
       <div class="container">
           <div class="option1">
             <h2>Order Registered Agent Services</h2>
@@ -21,17 +21,17 @@
             <button type="button" class="btn btn-lg btn-success">Get Started</button>
           </div>
       </div><!-- .container -->
-    </div><!-- .options -->
+    </section><!-- .options -->
 
-    <div id="quotes">
+    <section id="quotes">
       <div class="container">
           <h2>Price Quote</h2>
           <p class="lead">INCORP will beat any competitor’s price on on any product or service guaranteed!</p>
           <button class="btn btn-lg btn-primary">Get Price Quote</button>
       </div><!-- .container -->
-    </div><!-- .quotes -->
+    </section><!-- .quotes -->
 
-    <div id="services">
+    <section id="services">
       <div class="container">
         <h2>We offer great services for our customers. Select which service best fits your needs!</h2>
         <div class="services-list">
@@ -46,9 +46,9 @@
           <div class="service"><a href="#">Order Trademark Service</a></div>
         </div>
       </div><!-- .container -->
-    </div><!-- .services -->
+    </section><!-- .services -->
 
-    <div id="testimonials">
+    <section id="testimonials">
       <div class="container">
         <h2>Client Testimonials</h2>
 
@@ -85,9 +85,9 @@
 
 
       </div><!-- .container -->
-    </div><!-- .testimonials -->
+    </section><!-- .testimonials -->
 
-    <div id="newsletter">
+    <section id="newsletter">
       <div class="container">
             <form class="form-inline">
             <div class="form-group">
@@ -97,6 +97,6 @@
             <button type="submit" class="btn btn-success">Sign Up</button>
           </form>
       </div><!-- .container -->
-    </div><!-- .newsletter -->
+    </section><!-- .newsletter -->
 
     <?php include_once('_footer.php'); ?>
