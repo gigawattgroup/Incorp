@@ -30,7 +30,6 @@
       }
 
       a {
-
         padding: 0 25px;
         @include breakpoint($screen-sm) {
           padding: 0;
@@ -51,6 +50,7 @@
       }
 
     } // .service
+
   } // .services-list
 
 } // #services
