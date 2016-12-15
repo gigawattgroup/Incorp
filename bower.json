@@ -1,0 +1,22 @@
+{
+  "name": "incorp",
+  "description": "Incorp HTML Templates",
+  "main": "index.html",
+  "authors": [
+    "Amir Mishani <mamir1358@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/gigawattgroup/Incorp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "owl.carousel": "^2.2.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "incorp",
+  "version": "1.0.0",
+  "description": "Incorp HTML Templates",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigawattgroup/Incorp.git"
+  },
+  "author": "Amir Mishani <mamir1358@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gigawattgroup/Incorp/issues"
+  },
+  "homepage": "https://github.com/gigawattgroup/Incorp#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}

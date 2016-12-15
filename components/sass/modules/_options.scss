@@ -1,0 +1,46 @@
+
+#options {
+  background: $color__tertiary;
+  @include breakpoint($screen-md) {
+    background: linear-gradient(to right, $color__secondary 0%, $color__secondary 50%, $color__tertiary 50%, $color__tertiary 100%);
+  }
+  width: 100%;
+  text-align: center;
+  color: $color__light;
+
+  .container {
+    @include breakpoint(max-width $screen-sm-max) {
+      padding: 0;
+      width: 100%;
+    }
+
+    .option1, .option2 {
+      float: left;
+      width: 100%;
+      padding: 25px 50px 55px 50px;
+      @include breakpoint($screen-md) {
+        width: 50%;
+      }
+    }
+    .option1 {
+      background: $color__secondary;
+    }
+    .option2 {
+      background: $color__tertiary;
+    }
+  } // .container
+
+  h1, h2 {
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: normal;
+    border-bottom: 2px solid $color__light;
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
+
+} // #options

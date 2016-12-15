@@ -1,0 +1,91 @@
+
+#colophon {
+  width: 100%;
+  color: $footer-color;
+  background-color: $color__gray-medium;
+  line-height: 1.4;
+
+  & > .container {
+    @include breakpoint(max-width $screen-sm-max) {
+      width: 100%;
+    }
+
+  }
+
+  .fwidget {
+    width: 100%;
+    float: left;
+    padding-right: 30px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 25px;
+      color: $color__accent;
+    }
+
+    @include breakpoint($screen-sm) {
+      width: 50%;
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
+
+    @include breakpoint($screen-md) {
+      width: 25%;
+    }
+  }
+
+  .disclaimer {
+    padding: 25px 15px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.2;
+    background-color: $color__gray-dark;
+
+    .container {
+      // max-width: 760px;
+    }
+  }
+
+  .footer-links {
+    margin: 0 0 50px 0;
+    padding: 0;
+    list-style: none;
+    li {
+      padding: 5px 0;
+    }
+    a {
+      color: $footer-color;
+      &:hover, &:focus {
+        text-decoration: none;
+        color: $color__light;
+      }
+
+      // social media links setup
+      &[href*="facebook.com"] { @include icon('facebook'); }
+      &[href*="plus.google.com"] { @include icon('google-plus'); }
+      &[href*="twitter.com"] { @include icon('twitter'); }
+      &[href*="linkedin.com"] { @include icon('linkedin'); }
+
+    }
+
+  } // .footer-links
+
+  .footer-img-links {
+    @extend .footer-links;
+    padding-top: 30px;
+    li {
+      padding: 20px 0;
+    }
+  }
+
+  .location-map {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 225px;
+    margin-bottom: 30px;
+  }
+
+
+} // #colophon

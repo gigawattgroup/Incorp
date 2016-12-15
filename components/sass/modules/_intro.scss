@@ -1,0 +1,63 @@
+
+#intro {
+  position: relative;
+  width: 100%;
+  background-color: $intro-bg;
+  color: $intro-color;
+  background-image: url('../images/intro.png');
+  background-repeat: no-repeat;
+  background-position: center 150%;
+  background-size: auto 100%;
+  text-align: center;
+
+  @include breakpoint($screen-sm) {
+    background-position: right;
+  }
+
+  @include breakpoint($screen-md) {
+    text-align: left;
+    min-height: 414px;
+  }
+
+  @include breakpoint(2350px) {
+    background-position: center;
+  }
+
+
+  .container {
+    padding: 70px 15px;
+    z-index: 2;
+    position: relative;
+  }
+
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba($intro-bg, 0.3);
+    @include breakpoint($screen-md) {
+      width: 66%;
+      background: linear-gradient(to right, rgba($intro-bg, 1), rgba($intro-bg, 0));
+    }
+  }
+
+  h1, h2 {
+    font-size: 32px;
+    @include breakpoint($screen-md) {
+      width: 66.66%;
+      font-size: 48px;
+    }
+    font-weight: bold;
+    margin: 0 0 50px 0;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+
+  .btn {
+    border: 1px solid $color__light;
+  }
+
+} // #intro

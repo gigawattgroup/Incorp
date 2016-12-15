@@ -1,0 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+// overwrite bootstrap typography variables
+$font-family-sans-serif: 'Roboto','Helvetica','Arial',sans-serif;
+$font-size-base:   14px;
+$line-height-base: 1.846153846;
+
+$font-size-h2:            floor(($font-size-base * 1.86)); // ~26px
+
+body {
+  font-weight: 300;
+}

@@ -1,0 +1,46 @@
+
+$color__primary:     #004f94;
+$color__secondary:   #0489d9;
+$color__tertiary:    #026cb6;
+$color__accent:      #55c15d;
+$color__light:       #ffffff;
+$color__dark:        #000000;
+
+$color__gray:        #f6f6f6;
+$color__gray-light:  #efefef;
+$color__gray-medium: #333333;
+$color__gray-dark:   #222222;
+
+$topbar-bg: $color__gray-light;
+$header-bg: $color__light;
+$navbar-bg: $color__primary;
+$navbar-color: $color__light;
+
+$intro-bg: darken($color__primary, 20);
+$intro-color:     $color__light;
+
+$footer-color: #949494;
+
+
+// overwrite bootstrap color variables
+$brand-primary:   $color__primary;
+$brand-success:   $color__accent;
+$brand-info:      $color__secondary;
+
+// overwrite bootstrap main body text color
+$text-color:         #5b5b5b;
+
+
+// overwrite bootstrap navigation colors
+$navbar-default-color:             $color__light;
+$navbar-default-bg:                $color__primary;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+
+// overwrite bootstrap Navbar link colors
+$navbar-default-link-color:                $color__light;
+$navbar-default-link-hover-color:          $color__light;
+$navbar-default-link-hover-bg:             $color__secondary;
+$navbar-default-link-active-color:         $color__light;
+$navbar-default-link-active-bg:            $color__tertiary;
+$navbar-default-link-disabled-color:       #ccc !default;
+$navbar-default-link-disabled-bg:          transparent !default;

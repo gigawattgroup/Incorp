@@ -1,0 +1,45 @@
+#testimonials {
+  background: $color__gray;
+  padding: 65px 0;
+  h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  text-align: center;
+
+  blockquote {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    width: 90%;
+    background-color: $color__accent;
+    color: $color__light;
+    border: none;
+    border-radius: 25px;
+
+    footer {
+      color: inherit;
+      &::before {
+        content: '';
+      }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        margin-left: -10px;
+        border-width: 20px 20px 0;
+        border-style: solid;
+        border-color: $color__accent transparent;
+        display: block;
+        width: 0;
+    }
+
+  } //blockquote
+
+
+} // #testimonials

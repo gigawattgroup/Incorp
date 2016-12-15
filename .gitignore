@@ -1,5 +1,6 @@
 
-
+# Query tag files
+.tags
 
 ### Bower ###
 bower_components

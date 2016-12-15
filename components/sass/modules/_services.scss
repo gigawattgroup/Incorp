@@ -1,0 +1,56 @@
+#services {
+  padding: 65px 0;
+  h2 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .services-list {
+    @include make-row();
+    @extend .row-centered;
+    color: $color__primary;
+    font-size: 18px;
+    font-weight: bold;
+
+    .service {
+      @include make-xs-column(12);
+      @include make-sm-column(6);
+      @include make-md-column(4);
+      @extend .col-centered;
+
+      padding: 30px 0 30px 70px;
+
+      &:hover {
+        color: $color__secondary;
+      }
+
+      a, a:hover, a:focus, a:visited {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a {
+
+        padding: 0 25px;
+        @include breakpoint($screen-sm) {
+          padding: 0;
+        }
+
+        &::before {
+          width: 33px;
+          height: 35px;
+          content: " ";
+          background-image: url('../images/icon.png');
+          position: absolute;
+          top: 28px;
+          left: 25px;
+          @include breakpoint($screen-sm) {
+            left: 0;
+          }
+        }
+      }
+
+    } // .service
+  } // .services-list
+
+} // #services
