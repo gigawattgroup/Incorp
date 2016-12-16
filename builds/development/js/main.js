@@ -27,20 +27,30 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
 //---------------------------------------------
 (function($) {
 
+  // set vars:
+  var header = $("#masthead"),
+  brand = $(".navbar-brand"),
+  nav = $(".navbar"),
+  expert_btn1 = $(".header .btn-expert"),
+  expert_btn2 = $("#intro .btn-expert");
+
+  // fix header on scroll
+  function fixHeader() {
+    if ($(window).scrollTop() >= 55 && $(window).scrollTop() < 104) {
+      header.removeClass("fixed-header").addClass("fixed-header-step");
+    } else if ($(window).scrollTop() >= 105) {
+      header.removeClass("fixed-header-step").addClass("fixed-header");
+    } else {
+      header.removeClass("fixed-header-step fixed-header");
+    }
+  }
+
   $.fn.setAllToMaxHeight = function(){
     return this.height( Math.max.apply(this, $.map( this , function(e){ return $(e).height() }) ) );
   }
 
   // equial heights for homepage options
   $('#options .desc').setAllToMaxHeight();
-
-  // responsive reactions
-  $(window).resize(function(){
-
-    // equial heights for homepage options
-    $('#options .desc').setAllToMaxHeight();
-
-  });
 
   // testimonials carousel
   $('#testimonials-carousel').owlCarousel({
@@ -51,21 +61,36 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
       autoplayHoverPause:true
   });
 
-  // fix header on scroll
-  var header = $("#masthead"),
-  brand = $(".navbar-brand");
+  // responsive reactions
+  $(window).resize(function(){
 
-  $(window).on("scroll", function(e) {
-    //console.log($(window).scrollTop());
-    if ($(window).scrollTop() >= 55 && $(window).scrollTop() < 104) {
-      header.removeClass("fixed-header").addClass("fixed-header-step");
-    } else if ($(window).scrollTop() >= 105) {
-      header.removeClass("fixed-header-step").addClass("fixed-header");
-    } else {
-      header.removeClass("fixed-header-step fixed-header");
-    }
+    // equial heights for homepage options
+    $('#options .desc').setAllToMaxHeight();
 
   });
+
+
+  // window scroll reactions
+  $(window).on("scroll", function(e) {
+    //console.log($(window).scrollTop());
+
+    // fix header on scroll
+    fixHeader();
+
+    // toggle "talk to an expert" button
+
+  });
+
+
+  // function ToggleExpertBTN() {
+  //
+  // }
+  //
+  // var first = expert_btn2.offset().top;
+  // var second = nav.offset().top;
+  // var distance = parseInt(first) – parseInt(second);
+  // remove homepage "talk to an expert" button
+
 
 
   // dropdown on hover
