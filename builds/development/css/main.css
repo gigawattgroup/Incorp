@@ -10981,8 +10981,22 @@ button.close {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   padding-top: 175px;
+}
+
+#main {
+  -ms-flex: 1;
+      flex: 1;
 }
 
 #masthead {

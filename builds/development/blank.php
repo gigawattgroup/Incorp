@@ -1,6 +1,6 @@
 <?php include_once '_header.php'; ?>
 
-<section id="main">
+<section id="content">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
