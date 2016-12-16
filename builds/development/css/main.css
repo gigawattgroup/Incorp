@@ -10923,17 +10923,78 @@ button.close {
   width: 100%;
 }
 
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav, #testimonials .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-nav [class*='owl-'], #testimonials .owl-nav [class*='owl-'] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #D6D6D6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover, #testimonials .owl-nav [class*='owl-']:hover {
+  background: #869791;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.owl-theme .owl-nav .disabled, #testimonials .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots, #testimonials .owl-nav.disabled + .owl-dots {
+  margin-top: 10px;
+}
+
+.owl-theme .owl-dots, #testimonials .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot, #testimonials .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.owl-theme .owl-dots .owl-dot span, #testimonials .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, #testimonials .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span, #testimonials .owl-dots .owl-dot:hover span {
+  background: #55c15d;
+}
+
 /*--------------------------------------------------------------
 # Mixins
 --------------------------------------------------------------*/
-.vertical-center, #masthead .topbar, #masthead .header {
+.vertical-center, #masthead .topbar {
   height: 100%;
   width: 100%;
   text-align: center;
   /* align the inline(-block) elements horizontally */
 }
 
-.vertical-center:before, #masthead .topbar:before, #masthead .header:before {
+.vertical-center:before, #masthead .topbar:before {
   /* create a full-height inline block pseudo=element */
   content: " ";
   display: inline-block;
@@ -10942,7 +11003,7 @@ button.close {
   height: 100%;
 }
 
-.vertical-center > .container, #masthead .topbar > .container, #masthead .header > .container {
+.vertical-center > .container, #masthead .topbar > .container {
   max-width: 100%;
   display: inline-block;
   vertical-align: middle;
@@ -11006,6 +11067,7 @@ body {
   width: 100%;
   border-bottom: 3px solid #0489d9;
   z-index: 1000;
+  transition: all 0.3s ease-out;
 }
 
 #masthead .topbar {
@@ -11015,6 +11077,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   color: #707070;
+  transition: all 0.3s ease-out;
 }
 
 #masthead .topbar a, #masthead .topbar a:visited {
@@ -11047,6 +11110,8 @@ body {
   width: 100%;
   height: 90px;
   background-color: #ffffff;
+  transition: all 0.3s ease-out;
+  padding: 20px 0;
 }
 
 #masthead .header a, #masthead .header a:hover, #masthead .header a:focus, #masthead .header a:visited {
@@ -11064,7 +11129,6 @@ body {
   width: 175px;
   height: 50px;
   background: url("../images/incorp_logo.png") no-repeat;
-  vertical-align: middle;
   float: left;
 }
 
@@ -11081,6 +11145,7 @@ body {
   border-radius: 10px;
   margin: 7px 20px 0 0;
   letter-spacing: 1px;
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -11114,7 +11179,6 @@ body {
 
 #masthead .header .header-phone {
   float: right;
-  vertical-align: middle;
   font-size: 20px;
   font-weight: 400;
   color: #004f94;
@@ -11138,6 +11202,26 @@ body {
   background-color: #004f94;
   color: #ffffff;
   border-radius: 0;
+}
+
+#masthead.fixed-header-step, #masthead.fixed-header {
+  position: fixed;
+  top: 0;
+}
+
+#masthead.fixed-header-step .topbar, #masthead.fixed-header .topbar {
+  display: none;
+  height: 0;
+}
+
+#masthead.fixed-header-step .header {
+  height: 70px;
+  padding: 0 0 20px;
+}
+
+#masthead.fixed-header .header {
+  height: 50px;
+  padding: 0;
 }
 
 .navbar {
@@ -11620,7 +11704,7 @@ body {
 #testimonials blockquote {
   position: relative;
   display: inline-block;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   padding: 50px;
   text-align: center;
   width: 90%;
@@ -11638,12 +11722,12 @@ body {
   content: '';
 }
 
-#testimonials blockquote::before {
+#testimonials blockquote::after {
   content: "";
   position: absolute;
   bottom: -20px;
   left: 50%;
-  margin-left: -10px;
+  margin-left: -20px;
   border-width: 20px 20px 0;
   border-style: solid;
   border-color: #55c15d transparent;

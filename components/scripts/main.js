@@ -24,6 +24,22 @@
       autoplayHoverPause:true
   });
 
+  // fix header on scroll
+  var header = $("#masthead"),
+  brand = $(".navbar-brand");
+
+  $(window).on("scroll", function(e) {
+    //console.log($(window).scrollTop());
+    if ($(window).scrollTop() >= 55 && $(window).scrollTop() < 104) {
+      header.removeClass("fixed-header").addClass("fixed-header-step");
+    } else if ($(window).scrollTop() >= 105) {
+      header.removeClass("fixed-header-step").addClass("fixed-header");
+    } else {
+      header.removeClass("fixed-header-step fixed-header");
+    }
+
+  });
+
 
   // dropdown on hover
   /*$('ul.nav li.dropdown').hover(
