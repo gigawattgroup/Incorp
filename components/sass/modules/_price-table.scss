@@ -1,16 +1,78 @@
 #table {
   background: $color__gray;
-  padding: 65px 0;
-  h2 {
-    text-align: center;
-    padding-bottom: 65px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  ul {
+    margin-top: 10px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  h2, li {
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    text-align: right;
+    padding-bottom: 30px;
+  }
+
   li {
-    margin-bottom: 30px;
     color: $color__secondary;
+    line-height: 30px;
+    list-style-image: url('../images/info_bullet.png');
+  }
+
+  #tabledeal {
+    background: $color__light;
+    border-color: $color__accent;
+    border-style: solid;
+    border-width: 3px;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  #blueprice, #blueprice_s {
+    color: $color__secondary;
+    font-weight: 600;
+    display: inline-block;
+  }
+
+  #blueprice {
+      font-size: 80px;
+      margin-bottom: -20px;
+  }
+
+  #blueprice_s {
+    font-size: 16px;
+  }
+
+  #greenbg {
+    background-color: $color__accent;
+    color: $color__light;
+    text-align: center;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    font-weight: 400;
+  }
+
+  .price-center {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #price-bullets {
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+    display: inline;
+  }
+
+  button {
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 } // #table
-
-#blueprice {
-  color: $color__secondary;
-}

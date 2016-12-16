@@ -102,3 +102,5 @@
       </nav>
 
     </header><!-- #masthead -->
+
+    <div id="main">

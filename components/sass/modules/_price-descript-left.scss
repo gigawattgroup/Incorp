@@ -1,0 +1,30 @@
+
+#pricedescript {
+  background-color: $color__secondary;
+  color: $color__light;
+  padding: 20px 0;
+  text-align: center;
+
+  label {
+    @extend .lead;
+    margin: 0 20px 20px 0;
+    @include breakpoint($screen-sm) {
+      margin: 0 20px 0 0;
+    }
+  }
+
+  input {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    min-width: 150px;
+  }
+} // #pricedescript
+
+#quotewidth {
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: right;
+}

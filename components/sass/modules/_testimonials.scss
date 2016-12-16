@@ -7,10 +7,13 @@
   }
   text-align: center;
 
+
+  @extend .owl-theme;
+
   blockquote {
     position: relative;
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     padding: 50px;
     text-align: center;
     width: 90%;
@@ -26,12 +29,12 @@
       }
     }
 
-    &::before {
+    &::after {
         content: "";
         position: absolute;
         bottom: -20px;
         left: 50%;
-        margin-left: -10px;
+        margin-left: -20px;
         border-width: 20px 20px 0;
         border-style: solid;
         border-color: $color__accent transparent;
