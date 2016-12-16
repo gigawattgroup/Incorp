@@ -27,7 +27,6 @@
     @include breakpoint($screen-sm) {
       width: 50%;
       padding-top: 25px;
-      padding-bottom: 50px;
     }
 
     @include breakpoint($screen-md) {

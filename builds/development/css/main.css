@@ -18,7 +18,7 @@
   ## header
   ## navigation
   ## footer
-# homepage
+# pages
   ## intro
 # print
 
@@ -11287,7 +11287,6 @@ body {
   #colophon .fwidget {
     width: 50%;
     padding-top: 25px;
-    padding-bottom: 50px;
   }
 }
 
@@ -11357,7 +11356,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# homepage
+# Pages
 --------------------------------------------------------------*/
 #intro {
   position: relative;
@@ -11659,6 +11658,25 @@ body {
 
 #newsletter .btn {
   min-width: 150px;
+}
+
+#table {
+  background: #f6f6f6;
+  padding: 65px 0;
+}
+
+#table h2 {
+  text-align: center;
+  padding-bottom: 65px;
+}
+
+#table li {
+  margin-bottom: 30px;
+  color: #0489d9;
+}
+
+#blueprice {
+  color: #0489d9;
 }
 
 /*--------------------------------------------------------------

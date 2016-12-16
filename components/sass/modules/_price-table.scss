@@ -1,0 +1,16 @@
+#table {
+  background: $color__gray;
+  padding: 65px 0;
+  h2 {
+    text-align: center;
+    padding-bottom: 65px;
+  }
+  li {
+    margin-bottom: 30px;
+    color: $color__secondary;
+  }
+} // #table
+
+#blueprice {
+  color: $color__secondary;
+}

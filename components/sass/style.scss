@@ -18,7 +18,7 @@
   ## header
   ## navigation
   ## footer
-# homepage
+# pages
   ## intro
 # print
 
@@ -56,9 +56,10 @@
 @import "layout/layout";
 
 /*--------------------------------------------------------------
-# homepage
+# Pages
 --------------------------------------------------------------*/
 @import "layout/homepage";
+@import "layout/table";
 
 /*--------------------------------------------------------------
 # Print
