@@ -77,6 +77,11 @@
   });
 
 
+  // rotate chevron for table
+  $("#price-bullets li").on('click touchstart', function(e) {
+    $(this).find(".arrow_direction").toggleClass("active");
+  });
+
 
   // fix header on scroll
   function fixHeader() {

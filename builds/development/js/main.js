@@ -104,6 +104,11 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
   });
 
 
+  // rotate chevron for table
+  $("#price-bullets li").on('click touchstart', function(e) {
+    $(this).find(".arrow_direction").toggleClass("active");
+  });
+
 
   // fix header on scroll
   function fixHeader() {
