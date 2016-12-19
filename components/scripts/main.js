@@ -7,18 +7,18 @@
   expert_btn1 = $(".header .btn-expert"),
   expert_btn2 = $("#intro .btn-expert"),
   breakpointSM = 769,
-  breakpointHeader = 613;
+  breakpointHeader = 613,
+  minWidth =  '(min-width: '+breakpointSM+'px)';
 
   // dropdown on hover
-  toggleMenuHover(breakpointSM);
+  toggleMenuHover(minWidth);
 
-  hideExpertBTN(breakpointSM);
+  hideExpertBTN(minWidth);
 
   // on page load remove "talk to an expert" button on the homepage
   function hideExpertBTN(size) {
-    var nminWidth =  '(min-width: '+size+'px)';
     if($("#intro").length) {
-      if (window.matchMedia(nminWidth).matches && $("#masthead.fixed-header").length == 0) {
+      if (window.matchMedia(size).matches && $("#masthead.fixed-header").length == 0) {
         expert_btn1.addClass('invisible');
       } else {
         expert_btn1.removeClass('invisible');
@@ -56,9 +56,9 @@
     $('#options .desc').setAllToMaxHeight();
 
     // dropdown on hover
-    toggleMenuHover(breakpointSM);
+    toggleMenuHover(minWidth);
 
-    hideExpertBTN(breakpointSM);
+    hideExpertBTN(minWidth);
 
   });
 
@@ -73,7 +73,7 @@
     fixHeader();
 
     // toggle "talk to an expert" button
-    ToggleExpertBTN(breakpointSM);
+    ToggleExpertBTN(minWidth);
   });
 
 
@@ -94,12 +94,11 @@
     var first = expert_btn2.offset().top + expert_btn2.outerHeight();
     var second = nav.offset().top + nav.outerHeight();
     var distance = parseInt(second) - parseInt(first);
-    var minWidth =  '(min-width: '+size+'px)';
 
     if (distance > 0) {
       expert_btn1.removeClass('invisible');
     } else {
-      if (window.matchMedia(minWidth).matches) {
+      if (window.matchMedia(size).matches) {
         expert_btn1.addClass('invisible');
       }
     }
@@ -108,15 +107,15 @@
 
   // dropdown on hover
   function toggleMenuHover(size) {
-    var minWidth =  '(min-width: '+size+'px)';
 
     $('ul.nav li.dropdown').on("hover", function(e) {
+      console.log("hover detected");
         if (e.type == "mouseenter") {
-          if (window.matchMedia(minWidth).matches) {
+          if (window.matchMedia(size).matches) {
             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(300);
           }
         } else {
-          if (window.matchMedia(minWidth).matches) {
+          if (window.matchMedia(size).matches) {
             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(300);
           }
         }
