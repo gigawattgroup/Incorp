@@ -3,7 +3,7 @@
     <section id="intro">
       <div class="container">
         <h2>Registered agent service, entity formations, and corporate compliance.</h2>
-        <button type="button" class="btn btn-lg btn-info">Talk to an Expert</button>
+        <button type="button" class="btn btn-lg btn-info btn-expert">Talk to an Expert</button>
       </div><!-- .container -->
       <div class="gradient"></div>
     </section><!-- .jumbotron -->

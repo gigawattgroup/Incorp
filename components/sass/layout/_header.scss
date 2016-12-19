@@ -6,7 +6,11 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 175px;
+  padding-top: 210px;
+
+  @include breakpoint($breakpoint-header) { //635
+    padding-top: 175px;
+  }
 }
 
 #main {
@@ -60,12 +64,16 @@ body {
 
   .header {
     width: 100%;
-    height: 90px;
+    //height: 90px;
     background-color: $header-bg;
     transition: all 0.3s ease-out;
     padding: 20px 0;
 
     //@extend .vertical-center;
+
+    @include breakpoint($breakpoint-header) {
+      height: 90px;
+    }
 
     a, a:hover, a:focus, a:visited {
       color: inherit;
@@ -74,7 +82,7 @@ body {
 
     & > .container {
       @include breakpoint(max-width $screen-xs-max) {
-          width: 90%;
+          width: 100%;
       }
     }
 
@@ -89,6 +97,17 @@ body {
 
     } // .navbar-brand
 
+    .btn-expert {
+      float: right;
+      margin: 5px 0 0 20px;
+      width: 100%;
+      @include breakpoint($breakpoint-header) {
+        margin: 5px 0 5px 20px;
+        width: auto;
+
+      }
+    }
+
     .header-chat {
       display: none;
       float: right;
@@ -100,7 +119,7 @@ body {
       font-weight: 500;
       padding: 5px 15px;
       border-radius: 10px;
-      margin: 7px 20px 0 0;
+      margin: 7px 0 0 20px;
       letter-spacing: 1px;
       z-index: 2;
 
@@ -141,6 +160,7 @@ body {
       font-weight: 400;
       color: $color__primary;
       margin-top: 7px;
+      margin-left: 20px;
 
       &:hover {
         cursor: pointer;
@@ -162,28 +182,32 @@ body {
     border-radius: 0;
   } // .navbar
 
-  &.fixed-header-step, &.fixed-header {
-    position: fixed;
-    top: 0;
+@include breakpoint($screen-sm) {
 
-    .topbar {
-      display: none;
-      height: 0;
-    }
-  }
+    &.fixed-header-step, &.fixed-header {
 
-  &.fixed-header-step {
-      .header {
-        height: 70px;
-        padding: 0 0 20px;
+      position: fixed;
+      top: 0;
+
+      .topbar {
+        display: none;
+        height: 0;
       }
     }
 
-  &.fixed-header {
-    .header {
-      height: 50px;
-      padding: 0;
+    &.fixed-header-step {
+        .header {
+          height: 70px;
+          padding: 0 0 20px;
+        }
+      }
+
+    &.fixed-header {
+      .header {
+        height: 50px;
+        padding: 0;
+      }
     }
-  }
+}
 
 } // #masthead
