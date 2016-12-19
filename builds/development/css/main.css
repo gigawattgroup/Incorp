@@ -11778,14 +11778,25 @@ body {
 }
 
 #table h2 {
-  text-align: right;
   padding-bottom: 30px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  #table h2 {
+    text-align: right;
+  }
 }
 
 #table li {
   color: #0489d9;
   line-height: 30px;
   list-style-image: url("../images/info_bullet.png");
+  cursor: pointer;
+}
+
+#table .collapse {
+  padding-bottom: 15px;
 }
 
 #table #tabledeal {
@@ -11868,7 +11879,18 @@ body {
 #quotewidth {
   padding-left: 80px;
   padding-right: 80px;
-  text-align: right;
+}
+
+@media (max-width: 992px) {
+  #quotewidth {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #quotewidth {
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------

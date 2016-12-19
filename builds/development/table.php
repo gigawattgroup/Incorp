@@ -30,7 +30,12 @@
               </div> <!-- #price-center -->
               <div id="price-bullets">
                 <ul>
-                  <li>Registered Agent Address</li>
+                  <li data-toggle="collapse" data-target="#registered_agents">Registered Agent Address</li>
+                  <div id="registered_agents" class="collapse out">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
                   <li>Electronic Service of Process (SOP)</li>
                   <li>Customized Email Notifications</li>
                   <li>Online Account</li>

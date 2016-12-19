@@ -16,16 +16,21 @@
 
   h2 {
     padding-bottom: 30px;
-      text-align: center;
-    @include breakpoint($screen-sm) {
-      text-align: center;
+    text-align: center;
+    @include breakpoint($screen-md) {
+      text-align: right;
     }
   }
 
   li {
-    color: pink;
+    color: $color__secondary;
     line-height: 30px;
     list-style-image: url('../images/info_bullet.png');
+    cursor:pointer;
+  }
+
+  .collapse{
+    padding-bottom: 15px;
   }
 
   #tabledeal {
