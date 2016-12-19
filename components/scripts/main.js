@@ -17,8 +17,8 @@
   // on page load remove "talk to an expert" button on the homepage
   function hideExpertBTN(size) {
     var nminWidth =  '(min-width: '+size+'px)';
-    if($("#intro").length > 0) {
-      if (window.matchMedia(nminWidth).matches) {
+    if($("#intro").length) {
+      if (window.matchMedia(nminWidth).matches && $("#masthead.fixed-header").length == 0) {
         expert_btn1.addClass('invisible');
       } else {
         expert_btn1.removeClass('invisible');
