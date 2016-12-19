@@ -40,6 +40,11 @@
 
   });
 
+  // rotate chevron
+  $("#price-bullets li").on('click touchstart', function(e) {
+    $(this).find(".arrow_direction").toggleClass("active");
+  });
+
 
   // dropdown on hover
   /*$('ul.nav li.dropdown').hover(
