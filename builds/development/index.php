@@ -33,7 +33,7 @@
 
     <section id="services">
       <div class="container">
-        <h2>We offer great services for our customers. Select which service best fits your needs!</h2>
+        <h2 id="blueprice">We offer great services for our customers. Select which service best fits your needs!</h2>
         <div class="services-list">
           <div class="service"><a href="#">Form LLC or Corporation</a></div>
           <div class="service"><a href="#">Registered Agent Services</a></div>
