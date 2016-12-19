@@ -1,8 +1,12 @@
+
 #pricedescript {
   background-color: $color__secondary;
   color: $color__light;
   padding: 20px 0;
   text-align: center;
+  @include breakpoint($screen-md) {
+    text-align: right;
+  }
 
   label {
     @extend .lead;
@@ -25,10 +29,9 @@
 #quotewidth {
   padding-left: 80px;
   padding-right: 80px;
-  @include breakpoint(max-width $screen-md) {
-    text-align: center;
-  }
-  @include breakpoint(max-width $screen-sm) {
-    text-align: center;
+  text-align: center;
+  padding-bottom: 25px;
+  @include breakpoint($screen-md) {
+    text-align: right;
   }
 }
