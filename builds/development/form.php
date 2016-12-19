@@ -8,14 +8,6 @@
     </div><!-- .container -->
   </div><!-- .pricedescript -->
 
-  <div id="breadcrumb">
-    <div class="container">
-          <div class="col-md-12">
-            <p>Select a Package</p>
-          </div>
-    </div><!-- .container -->
-  </div><!-- .pricedescript -->
-
   <section id="table">
     <div class="container">
       <div class="row">
