@@ -36,7 +36,7 @@
                   <li>Online Account</li>
                   <li>Online Forms Library</li>
                   <li>Electronic Document Storage</li>
-                  <li>Electronic Invoice Delivery & Reminders</li>
+                  <li>Electronic Invoice Delivery &amp; Reminders</li>
                   <li>Online Compliance Calendar</li>
                   <li>Report Due Date Reminders</li>
                   <li>BBB Accredited A+ Rating!</li>

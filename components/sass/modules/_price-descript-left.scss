@@ -26,5 +26,10 @@
 #quotewidth {
   padding-left: 80px;
   padding-right: 80px;
-  text-align: right;
+  @include breakpoint(max-width $screen-md) {
+    text-align: center;
+  }
+  @include breakpoint(max-width $screen-sm) {
+    text-align: center;
+  }
 }

@@ -15,12 +15,15 @@
   }
 
   h2 {
-    text-align: right;
     padding-bottom: 30px;
+      text-align: center;
+    @include breakpoint($screen-sm) {
+      text-align: center;
+    }
   }
 
   li {
-    color: $color__secondary;
+    color: pink;
     line-height: 30px;
     list-style-image: url('../images/info_bullet.png');
   }
