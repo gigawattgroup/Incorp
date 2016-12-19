@@ -58,6 +58,10 @@
 
   .btn {
     border: 1px solid $color__light;
+    display: none;
+    @include breakpoint($screen-sm) {
+      display: inline-block;
+    }
   }
 
 } // #intro

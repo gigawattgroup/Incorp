@@ -20,7 +20,7 @@
   ## header
   ## navigation
   ## footer
-# homepage
+# Pages
   ## intro
 # print
 
@@ -11052,7 +11052,13 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  padding-top: 175px;
+  padding-top: 210px;
+}
+
+@media (min-width: 637px) {
+  body {
+    padding-top: 175px;
+  }
 }
 
 #main {
@@ -11108,10 +11114,15 @@ body {
 
 #masthead .header {
   width: 100%;
-  height: 90px;
   background-color: #ffffff;
   transition: all 0.3s ease-out;
   padding: 20px 0;
+}
+
+@media (min-width: 637px) {
+  #masthead .header {
+    height: 90px;
+  }
 }
 
 #masthead .header a, #masthead .header a:hover, #masthead .header a:focus, #masthead .header a:visited {
@@ -11121,7 +11132,7 @@ body {
 
 @media (max-width: 767px) {
   #masthead .header > .container {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -11130,6 +11141,19 @@ body {
   height: 50px;
   background: url("../images/incorp_logo.png") no-repeat;
   float: left;
+}
+
+#masthead .header .btn-expert {
+  float: right;
+  margin: 5px 0 0 20px;
+  width: 100%;
+}
+
+@media (min-width: 637px) {
+  #masthead .header .btn-expert {
+    margin: 5px 0 5px 20px;
+    width: auto;
+  }
 }
 
 #masthead .header .header-chat {
@@ -11143,7 +11167,7 @@ body {
   font-weight: 500;
   padding: 5px 15px;
   border-radius: 10px;
-  margin: 7px 20px 0 0;
+  margin: 7px 0 0 20px;
   letter-spacing: 1px;
   z-index: 2;
 }
@@ -11183,6 +11207,7 @@ body {
   font-weight: 400;
   color: #004f94;
   margin-top: 7px;
+  margin-left: 20px;
 }
 
 #masthead .header .header-phone:hover {
@@ -11204,24 +11229,23 @@ body {
   border-radius: 0;
 }
 
-#masthead.fixed-header-step, #masthead.fixed-header {
-  position: fixed;
-  top: 0;
-}
-
-#masthead.fixed-header-step .topbar, #masthead.fixed-header .topbar {
-  display: none;
-  height: 0;
-}
-
-#masthead.fixed-header-step .header {
-  height: 70px;
-  padding: 0 0 20px;
-}
-
-#masthead.fixed-header .header {
-  height: 50px;
-  padding: 0;
+@media (min-width: 768px) {
+  #masthead.fixed-header-step, #masthead.fixed-header {
+    position: fixed;
+    top: 0;
+  }
+  #masthead.fixed-header-step .topbar, #masthead.fixed-header .topbar {
+    display: none;
+    height: 0;
+  }
+  #masthead.fixed-header-step .header {
+    height: 70px;
+    padding: 0 0 20px;
+  }
+  #masthead.fixed-header .header {
+    height: 50px;
+    padding: 0;
+  }
 }
 
 .navbar {
@@ -11267,7 +11291,21 @@ body {
 }
 
 .navbar-default .navbar-toggle:hover {
+  background-color: #ffffff;
+  border-color: #004f94;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
   background-color: #004f94;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: #004f94;
+  border-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #ffffff;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -11278,6 +11316,64 @@ body {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: #0489d9;
+}
+
+.navbar-toggle {
+  position: relative;
+  width: 44px;
+  height: 34px;
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+  left: 10px;
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.navbar-toggle span:nth-child(2) {
+  top: 9px;
+  -ms-transform-origin: left center;
+      transform-origin: left center;
+}
+
+.navbar-toggle span:nth-child(3) {
+  top: 11px;
+  -ms-transform-origin: left center;
+      transform-origin: left center;
+}
+
+.navbar-toggle span:nth-child(4) {
+  top: 17px;
+  -ms-transform-origin: left center;
+      transform-origin: left center;
+}
+
+.navbar-toggle.open span:nth-child(2) {
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  top: 8px;
+  left: 14px;
+}
+
+.navbar-toggle.open span:nth-child(3) {
+  width: 0%;
+  opacity: 0;
+}
+
+.navbar-toggle.open span:nth-child(4) {
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  top: 19px;
+  left: 14px;
 }
 
 .dropdown-large {
@@ -11406,7 +11502,7 @@ body {
 }
 
 #colophon .footer-links, #colophon .footer-img-links {
-  margin: 0 0 50px 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -11457,7 +11553,7 @@ body {
 }
 
 /*--------------------------------------------------------------
-# homepage
+# Pages
 --------------------------------------------------------------*/
 #intro {
   position: relative;
@@ -11530,6 +11626,13 @@ body {
 
 #intro .btn {
   border: 1px solid #ffffff;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #intro .btn {
+    display: inline-block;
+  }
 }
 
 #options {

@@ -27,8 +27,10 @@
         <div class="container">
           <a class="navbar-brand" href="/"><h1 class="sr-only">Incorp</h1></a>
           <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
           <div class="header-phone"><a href="#">1.800.246.2677</a></div>
           <div class="header-chat"><a href="#">Live Chat</a></div>
+          <button type="button" class="btn btn-info btn-expert">Talk to an Expert</button>
         </div><!-- .container -->
       </div><!-- .header -->
 
