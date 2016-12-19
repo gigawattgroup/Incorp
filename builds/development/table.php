@@ -8,13 +8,7 @@
     </div><!-- .container -->
   </div><!-- .pricedescript -->
 
-  <div id="breadcrumb">
-    <div class="container">
-          <div class="col-md-12">
-            <p>Select a Package</p>
-          </div>
-    </div><!-- .container -->
-  </div><!-- .pricedescript -->
+  <?php include_once('_breadcrumbs.php'); ?>
 
   <section id="table">
     <div class="container">

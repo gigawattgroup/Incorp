@@ -11455,8 +11455,28 @@ body {
 
 #breadcrumb {
   background-color: #ffffff;
-  padding: 20px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#bread_currentpage, .bread_parentpage {
+  color: #5b5b5b;
+  font-size: 12px;
+  letter-spacing: .5px;
   text-align: left;
+  text-transform: uppercase;
+}
+
+#bread_currentpage:hover, .bread_parentpage:hover {
+  text-decoration: none;
+}
+
+.bread_parentpage {
+  font-weight: 300;
+}
+
+#bread_currentpage {
+  font-weight: 600;
 }
 
 #colophon {
@@ -11907,6 +11927,12 @@ body {
   }
 }
 
+#table li {
+  color: #949494;
+  list-style-image: url("../images/info_bullet.png");
+  cursor: pointer;
+}
+
 #table .arrow_direction {
   color: #55c15d;
   display: inline;
@@ -11921,12 +11947,6 @@ body {
 
 #table .arrow_direction.active::before {
   width: 30px;
-}
-
-#table li {
-  color: #949494;
-  list-style-image: url("../images/info_bullet.png");
-  cursor: pointer;
 }
 
 #table .collapse {
@@ -11991,12 +12011,6 @@ body {
 #table button {
   margin-bottom: 30px;
   margin-top: 15px;
-}
-
-#breadcrumb {
-  background-color: #ffffff;
-  padding: 20px 0;
-  text-align: center;
 }
 
 #pricedescript {
