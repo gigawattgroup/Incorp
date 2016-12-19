@@ -11879,17 +11879,13 @@ body {
 #quotewidth {
   padding-left: 80px;
   padding-right: 80px;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   #quotewidth {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  #quotewidth {
-    text-align: center;
+    text-align: right;
   }
 }
 
