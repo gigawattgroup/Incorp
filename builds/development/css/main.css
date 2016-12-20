@@ -12020,12 +12020,6 @@ body {
   text-align: center;
 }
 
-@media (min-width: 992px) {
-  #pricedescript {
-    text-align: right;
-  }
-}
-
 #pricedescript label {
   margin: 0 20px 20px 0;
 }
@@ -12056,6 +12050,79 @@ body {
   #quotewidth {
     text-align: right;
   }
+}
+
+#form {
+  background: #f6f6f6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+#form .form_sect_headings {
+  color: #0489d9;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: thin solid #0489d9;
+  padding-bottom: 5px;
+}
+
+#form input {
+  width: 300px;
+  padding: 10px 20px;
+  margin: 8px 15px 0px 0px;
+  display: inline-block;
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  outline: none;
+}
+
+#form input[type=text]:focus {
+  border: 1.5px solid #55c15d;
+  box-shadow: 2px 2px 18px -4px rgba(0, 0, 0, 0.22);
+}
+
+#form #order_summary_box {
+  height: auto;
+  max-width: 400px;
+  border: 1.5px solid #ccc;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+#form #order_summary_box #order_title {
+  text-align: left;
+  text-transform: uppercase;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: thin solid #ccc;
+  padding-bottom: 5px;
+}
+
+#form #order_summary_box #services_selected, #form #order_summary_box #services_quantity {
+  list-style: none;
+  padding-left: 0;
+  display: inline;
+}
+
+#form #order_summary_box #services_selected {
+  float: left;
+}
+
+#form #order_summary_box #services_quantity {
+  float: right;
+  text-align: right;
+}
+
+#form #order_summary_box #order_summary_button {
+  width: 100%;
 }
 
 /*--------------------------------------------------------------

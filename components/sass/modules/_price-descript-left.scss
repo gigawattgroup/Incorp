@@ -4,9 +4,6 @@
   color: $color__light;
   padding: 20px 0;
   text-align: center;
-  @include breakpoint($screen-md) {
-    text-align: right;
-  }
 
   label {
     @extend .lead;
