@@ -1,0 +1,25 @@
+#breadcrumb {
+  background-color: $color__light;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#bread_currentpage, .bread_parentpage {
+  color: $text-color;
+  font-size: 12px;
+  letter-spacing: .5px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#bread_currentpage:hover, .bread_parentpage:hover {
+  text-decoration: none;
+}
+
+.bread_parentpage {
+  font-weight: 300;
+}
+
+#bread_currentpage {
+  font-weight: 600;
+}

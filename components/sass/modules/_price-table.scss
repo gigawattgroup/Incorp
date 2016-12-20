@@ -32,6 +32,12 @@
     }
   }
 
+  li {
+    color: $footer-color;
+    list-style-image: url('../images/info_bullet.png');
+    cursor: pointer;
+  }
+
   .arrow_direction {
     color: $color__accent;
     display: inline;
@@ -42,12 +48,6 @@
     &.active {
       @include icon('chevron-down');
     }
-  }
-
-  li {
-    color: $footer-color;
-    list-style-image: url('../images/info_bullet.png');
-    cursor: pointer;
   }
 
   .collapse{

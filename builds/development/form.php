@@ -8,8 +8,6 @@
     </div><!-- .container -->
   </div><!-- .pricedescript -->
 
-  <?php include_once('_breadcrumbs.php'); ?>
-
   <section id="table">
     <div class="container">
       <div class="row">
@@ -99,8 +97,7 @@
 
                   <!-- Report Due Date Reminders -->
                   <li data-toggle="collapse" data-target="#report_due">
-                    <p class="list_title">Report Due Date Reminders</p><div class="arrow_direction"></div>
-                    <div id="report_due" class="collapse out">
+                    <p class="list_title">Report Due Date Reminders</p><div class="arrow_direction"></div><div id="report due" class="collapse out">
                       Your Compliance Calendar will automatically email you 30 days before a state report is due and then send another reminder 5 days before the due date.
                     </div>
                   </li>

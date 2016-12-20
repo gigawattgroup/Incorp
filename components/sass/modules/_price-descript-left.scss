@@ -1,4 +1,3 @@
-
 #pricedescript {
   background-color: $color__secondary;
   color: $color__light;
@@ -26,9 +25,10 @@
 #quotewidth {
   padding-left: 80px;
   padding-right: 80px;
-  text-align: center;
-  padding-bottom: 25px;
-  @include breakpoint($screen-md) {
-    text-align: right;
+  @include breakpoint(max-width $screen-md) {
+    text-align: center;
+  }
+  @include breakpoint(max-width $screen-sm) {
+    text-align: center;
   }
 }
