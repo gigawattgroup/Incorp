@@ -5,7 +5,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" tabindex="5"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Talk to an Expert</h4>
       </div>
       <div class="modal-body">
@@ -24,7 +24,7 @@
         </div>
         <div class="form-group">
            <label for="inputMessage">Message</label>
-           <textarea class="form-control" rows="5" id="inputMessage" placeholder="Tell us how we can help you" ></textarea>
+           <textarea class="form-control" rows="5" id="inputMessage" placeholder="Tell us how we can help you"></textarea>
         </div>
       </div>
       <div class="modal-footer">

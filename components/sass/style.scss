@@ -7,7 +7,7 @@
  */
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS: 
+>>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # variables
   ## color
@@ -15,11 +15,15 @@
 # libraries
 # mixins
 # elements
+# forms
+  ## fields
   ## buttons
 # layout
   ## header
   ## navigation
   ## footer
+  ## breadcrumbs
+  ## modal
 # pages
   ## intro
 # print
@@ -54,6 +58,11 @@
 @import "elements/elements";
 
 /*--------------------------------------------------------------
+# forms
+--------------------------------------------------------------*/
+@import "elements/forms";
+
+/*--------------------------------------------------------------
 # layout
 --------------------------------------------------------------*/
 @import "layout/layout";
@@ -62,7 +71,9 @@
 # pages
 --------------------------------------------------------------*/
 @import "layout/homepage";
+@import "layout/blank";
 @import "layout/table";
+@import "layout/landing";
 
 /*--------------------------------------------------------------
 # print

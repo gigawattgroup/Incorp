@@ -7,7 +7,7 @@
  * Version: 1.0.0
  */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS: 
+>>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # variables
   ## color
@@ -15,11 +15,15 @@
 # libraries
 # mixins
 # elements
+# forms
+  ## fields
   ## buttons
 # layout
   ## header
   ## navigation
   ## footer
+  ## breadcrumbs
+  ## modal
 # pages
   ## intro
 # print
@@ -1430,12 +1434,12 @@ textarea {
 }
 
 a {
-  color: #004f94;
+  color: #0489d9;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #002648;
+  color: #035a8e;
   text-decoration: underline;
 }
 
@@ -3994,7 +3998,7 @@ fieldset[disabled] .btn-danger.focus {
 }
 
 .btn-link {
-  color: #004f94;
+  color: #0489d9;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4010,7 +4014,7 @@ fieldset[disabled] .btn-link {
 }
 
 .btn-link:hover, .btn-link:focus {
-  color: #002648;
+  color: #035a8e;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4648,7 +4652,7 @@ tbody.collapse.in {
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #004f94;
+  border-color: #0489d9;
 }
 
 .nav .nav-divider {
@@ -5419,7 +5423,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.846153846;
   text-decoration: none;
-  color: #004f94;
+  color: #0489d9;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -5442,7 +5446,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #002648;
+  color: #035a8e;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -5670,7 +5674,7 @@ a.label:hover, a.label:focus {
 
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #004f94;
+  color: #0489d9;
   background-color: #fff;
 }
 
@@ -5770,7 +5774,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #004f94;
+  border-color: #0489d9;
 }
 
 .alert {
@@ -10987,6 +10991,13 @@ button.close {
 /*--------------------------------------------------------------
 # mixins
 --------------------------------------------------------------*/
+/* Shadows */
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
 .vertical-center, #masthead .topbar {
   height: 100%;
   width: 100%;
@@ -11023,8 +11034,48 @@ button.close {
   margin-right: -4px;
 }
 
+.mdl-shadow--2dp {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mdl-shadow--3dp {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mdl-shadow--4dp {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--6dp {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--8dp {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--16dp {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--24dp {
+  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+}
+
 /*--------------------------------------------------------------
 # elements
+--------------------------------------------------------------*/
+a {
+  font-weight: normal;
+}
+
+.lead, #newsletter label, #pricedescript label {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*--------------------------------------------------------------
+# forms
 --------------------------------------------------------------*/
 .btn {
   text-transform: uppercase;
@@ -11453,30 +11504,6 @@ body {
   }
 }
 
-#breadcrumbs {
-  background-color: #ffffff;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.breadcrumb {
-  margin-bottom: 0;
-  background-color: #ffffff;
-  padding: 0;
-}
-
-.breadcrumb li, .breadcrumb a {
-  color: #5b5b5b;
-  font-size: 12px;
-  letter-spacing: .5px;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
-.breadcrumb li.active, .breadcrumb a.active {
-  font-weight: 600;
-}
-
 #colophon {
   width: 100%;
   color: #949494;
@@ -11573,6 +11600,31 @@ body {
   height: auto;
   max-width: 225px;
   margin-bottom: 30px;
+}
+
+#breadcrumbs {
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #efefef;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.breadcrumb li, .breadcrumb a {
+  color: #5b5b5b;
+  font-size: 12px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.breadcrumb li.active, .breadcrumb a.active {
+  font-weight: 600;
 }
 
 #expert-contact-form .modal-content {
@@ -11898,6 +11950,11 @@ body {
   min-width: 150px;
 }
 
+#content .container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
 #table {
   background: #f6f6f6;
   padding-top: 30px;
@@ -12062,6 +12119,58 @@ body {
 @media (max-width: 768px) {
   #quotewidth {
     text-align: center;
+  }
+}
+
+#landing-intro {
+  position: relative;
+  width: 100%;
+  background-color: #00192e;
+  color: #ffffff;
+  background-image: url("../images/intro2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  #landing-intro {
+    min-height: 300px;
+  }
+}
+
+#landing-intro .container {
+  padding: 70px 15px;
+  z-index: 2;
+  position: relative;
+}
+
+#landing-intro h1, #landing-intro h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 992px) {
+  #landing-intro h1, #landing-intro h2 {
+    font-size: 36px;
+  }
+}
+
+#landing-intro .wizard {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin-top: 25px;
+}
+
+@media (min-width: 992px) {
+  #landing-intro .wizard {
+    margin-top: 0;
   }
 }
 
