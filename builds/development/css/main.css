@@ -11453,29 +11453,27 @@ body {
   }
 }
 
-#breadcrumb {
+#breadcrumbs {
   background-color: #ffffff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-#bread_currentpage, .bread_parentpage {
+.breadcrumb {
+  margin-bottom: 0;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.breadcrumb li, .breadcrumb a {
   color: #5b5b5b;
   font-size: 12px;
   letter-spacing: .5px;
-  text-align: left;
   text-transform: uppercase;
-}
-
-#bread_currentpage:hover, .bread_parentpage:hover {
-  text-decoration: none;
-}
-
-.bread_parentpage {
   font-weight: 300;
 }
 
-#bread_currentpage {
+.breadcrumb li.active, .breadcrumb a.active {
   font-weight: 600;
 }
 

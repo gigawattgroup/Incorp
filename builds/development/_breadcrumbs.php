@@ -1,8 +1,8 @@
-<div id="breadcrumb">
+<div id="breadcrumbs">
   <div class="container">
-        <div class="col-md-12">
-          <a class="bread_parentpage" href="">Home</a> /
-          <a id="bread_currentpage" href="">Select a Package</a>
-        </div>
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li class="active">Select a Package</li>
+        </ol><!-- .breadcrumb -->
   </div><!-- .container -->
 </div><!-- #breadcrumb -->

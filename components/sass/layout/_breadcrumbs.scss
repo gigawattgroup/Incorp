@@ -1,25 +1,23 @@
-#breadcrumb {
+#breadcrumbs {
   background-color: $color__light;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-#bread_currentpage, .bread_parentpage {
-  color: $text-color;
-  font-size: 12px;
-  letter-spacing: .5px;
-  text-align: left;
-  text-transform: uppercase;
-}
+.breadcrumb {
+  margin-bottom: 0;
+  background-color: $color__light;
+  padding: 0;
 
-#bread_currentpage:hover, .bread_parentpage:hover {
-  text-decoration: none;
-}
+  li, a {
+    color: $text-color;
+    font-size: 12px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-weight: 300;
 
-.bread_parentpage {
-  font-weight: 300;
-}
-
-#bread_currentpage {
-  font-weight: 600;
-}
+    &.active {
+      font-weight: 600;
+    }
+  }
+} //.breadcrumb
