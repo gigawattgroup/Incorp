@@ -1,6 +1,12 @@
 #expert-contact-form {
   .modal-content {
     background-color: $color__secondary;
-    color: $color__light;  
+    color: $color__light;
+  }
+
+  .modal-dialog {
+    @include breakpoint($screen-sm) {
+      width: 450px;
+    }
   }
 }

@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btn-success">Contact Me</button>
+        <button type="submit" class="btn btn-block btn-success">Contact Me</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
