@@ -1,4 +1,40 @@
 </div><!-- #main -->
+
+<div id="expert-contact-form" class="modal fade" tabindex="-1" role="dialog">
+  <form method="post">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Talk to an Expert</h4>
+      </div>
+      <div class="modal-body">
+        <p>Enter your information below and one of our knowledgeable representatives will contact you shortly.</p>
+        <div class="form-group">
+           <label for="inputName">Name</label>
+           <input type="text" class="form-control" id="inputName" placeholder="Name">
+        </div>
+        <div class="form-group">
+           <label for="inputPhone">Phone</label>
+           <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+        </div>
+        <div class="form-group">
+           <label for="innputEmail">Email</label>
+           <input type="email" class="form-control" id="innputEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+           <label for="inputMessage">Message</label>
+           <textarea class="form-control" rows="5" id="inputMessage" placeholder="Tell us how we can help you" ></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-success">Contact Me</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  </form>
+</div><!-- /.modal -->
+
 <footer id="colophon">
 
   <div class="container">

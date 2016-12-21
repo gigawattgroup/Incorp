@@ -11575,6 +11575,11 @@ body {
   margin-bottom: 30px;
 }
 
+#expert-contact-form .modal-content {
+  background-color: #0489d9;
+  color: #ffffff;
+}
+
 /*--------------------------------------------------------------
 # pages
 --------------------------------------------------------------*/
