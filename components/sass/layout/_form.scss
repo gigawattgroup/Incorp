@@ -1,9 +1,9 @@
 #form {
   background: $color__gray;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 30px;
   text-align: left;
-  padding-left: 30px;
+  //padding-left: 30px;
 
   .form_sect_headings {
     color: $color__secondary;
@@ -14,48 +14,53 @@
     border-left: none;
     border-bottom: thin solid $color__secondary;
     padding-bottom: 5px;
+    padding-top: 10px;
   }
 
-  input {
-    width: 300px;
-    padding: 10px 20px;
-    margin: 8px 15px 0px 0px;
-    display: inline-block;
-    border: 1.5px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-  }
-
-  input[type=text]:focus {
-    border: 1.5px solid $color__accent;
-    -webkit-box-shadow: 2px 2px 18px -4px rgba(0,0,0,0.22);
-    -moz-box-shadow: 2px 2px 18px -4px rgba(0,0,0,0.22);
-    box-shadow: 2px 2px 18px -4px rgba(0,0,0,0.22);
+  .selections {
+    font-weight: 400;
+    display: inline;
   }
 
   #order_summary_box {
+    position: absolute;
     height: auto;
     max-width: 400px;
     border: 1.5px solid #ccc;
     background-color: $color__light;
     padding: 30px;
 
-    #order_title {
+    #order_title, #order_total {
       text-align: left;
       text-transform: uppercase;
-      border-top: none;
       border-right: none;
       border-left: none;
+    }
+
+    #order_title {
+      border-top: none;
       border-bottom: thin solid #ccc;
       padding-bottom: 5px;
+    }
+
+    #order_total, #order_total_amount {
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+
+    #order_total_amount {
+      float: right;
     }
 
     #services_selected, #services_quantity {
       list-style: none;
       padding-left:0;
+      display: inline;
+    }
+
+    .order_list_titles {
+      font-weight: 400;
       display: inline;
     }
 

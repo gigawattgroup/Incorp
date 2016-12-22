@@ -44,3 +44,9 @@ $navbar-default-link-active-color:         $color__light;
 $navbar-default-link-active-bg:            $color__tertiary;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
+
+// overwrite bootstrap Border color for inputs on focus
+$input-border-focus: $color__accent;
+
+// overwrite bootstrap horizontal hr
+$hr-border: #ccc;

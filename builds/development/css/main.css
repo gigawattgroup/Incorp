@@ -1482,7 +1482,7 @@ hr {
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #ccc;
 }
 
 .sr-only {
@@ -3072,9 +3072,9 @@ output {
 }
 
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #55c15d;
   outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(85, 193, 93, 0.6);
 }
 
 .form-control::-moz-placeholder {
@@ -11073,7 +11073,7 @@ body {
   width: 100%;
   border-bottom: 3px solid #0489d9;
   z-index: 1000;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in;
 }
 
 #masthead .topbar {
@@ -11083,7 +11083,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   color: #707070;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in;
 }
 
 #masthead .topbar a, #masthead .topbar a:visited {
@@ -12054,10 +12054,9 @@ body {
 
 #form {
   background: #f6f6f6;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-bottom: 30px;
   text-align: left;
-  padding-left: 30px;
 }
 
 #form .form_sect_headings {
@@ -12069,26 +12068,16 @@ body {
   border-left: none;
   border-bottom: thin solid #0489d9;
   padding-bottom: 5px;
+  padding-top: 10px;
 }
 
-#form input {
-  width: 300px;
-  padding: 10px 20px;
-  margin: 8px 15px 0px 0px;
-  display: inline-block;
-  border: 1.5px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  transition: 0.5s;
-  outline: none;
-}
-
-#form input[type=text]:focus {
-  border: 1.5px solid #55c15d;
-  box-shadow: 2px 2px 18px -4px rgba(0, 0, 0, 0.22);
+#form .selections {
+  font-weight: 400;
+  display: inline;
 }
 
 #form #order_summary_box {
+  position: absolute;
   height: auto;
   max-width: 400px;
   border: 1.5px solid #ccc;
@@ -12096,19 +12085,37 @@ body {
   padding: 30px;
 }
 
-#form #order_summary_box #order_title {
+#form #order_summary_box #order_title, #form #order_summary_box #order_total {
   text-align: left;
   text-transform: uppercase;
-  border-top: none;
   border-right: none;
   border-left: none;
+}
+
+#form #order_summary_box #order_title {
+  border-top: none;
   border-bottom: thin solid #ccc;
   padding-bottom: 5px;
+}
+
+#form #order_summary_box #order_total, #form #order_summary_box #order_total_amount {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+#form #order_summary_box #order_total_amount {
+  float: right;
 }
 
 #form #order_summary_box #services_selected, #form #order_summary_box #services_quantity {
   list-style: none;
   padding-left: 0;
+  display: inline;
+}
+
+#form #order_summary_box .order_list_titles {
+  font-weight: 400;
   display: inline;
 }
 
