@@ -96,15 +96,17 @@
 
   //toggle homepage "talk to an expert" button
   function ToggleExpertBTN(size) {
-    var first = expert_btn2.offset().top + expert_btn2.outerHeight();
-    var second = nav.offset().top + nav.outerHeight();
-    var distance = parseInt(second) - parseInt(first);
+    if($("#intro").length) {
+      var first = expert_btn2.offset().top + expert_btn2.outerHeight();
+      var second = nav.offset().top + nav.outerHeight();
+      var distance = parseInt(second) - parseInt(first);
 
-    if (distance > 0) {
-      expert_btn1.removeClass('invisible');
-    } else {
-      if (window.matchMedia(size).matches) {
-        expert_btn1.addClass('invisible');
+      if (distance > 0) {
+        expert_btn1.removeClass('invisible');
+      } else {
+        if (window.matchMedia(size).matches) {
+          expert_btn1.addClass('invisible');
+        }
       }
     }
 
@@ -127,6 +129,16 @@
     });
 
   }
+
+  // fix price table on scroll
+  function FixToTop(elem) {
+    var h = $("#masthead").height();
+    console.log("h: "+h);
+    elem.stick_in_parent({offset_top: h});
+  }
+
+
+
 
 
 })(jQuery);

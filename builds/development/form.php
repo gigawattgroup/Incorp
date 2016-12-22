@@ -207,7 +207,7 @@
 
         <!--<div class="col-md-1"></div>-->
 
-        <div class="col-md-5">
+        <div class="col-md-5 stay-fixed">
           <div id="tabledeal">
             <div id="order_summary_box"><p id="order_title">Your Order</p>
               <ul id="services_selected">

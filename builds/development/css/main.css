@@ -10993,35 +10993,47 @@ button.close {
 --------------------------------------------------------------*/
 /* Shadows */
 .bg-navy {
-  background-color: #004f94;
+  background-color: #004f94 !important;
 }
 
 .bg-blue {
-  background-color: #0489d9;
+  background-color: #0489d9 !important;
 }
 
 .bg-green {
-  background-color: #55c15d;
+  background-color: #55c15d !important;
 }
 
 .bg-gray {
-  background-color: #55c15d;
+  background-color: #f6f6f6 !important;
 }
 
-.bg-dark {
-  background-color: #55c15d;
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
 }
 
 .text-navy {
-  color: #004f94;
+  color: #004f94 !important;
 }
 
 .text-blue {
-  color: #0489d9;
+  color: #0489d9 !important;
 }
 
 .text-green {
-  color: #55c15d;
+  color: #55c15d !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
 }
 
 /*! Use .vcenter class to center two columns,
