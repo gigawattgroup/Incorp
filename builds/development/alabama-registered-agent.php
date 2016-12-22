@@ -111,17 +111,13 @@
             </ul>
 
       </div><!-- .col -->
-      <div class="col-md-6">
+      <div class="col-md-6 spacer">
         <a id="EntityOrderButton" class="hidden-sm hidden-xs btn btn-block btn-info" href="#">REGISTERED AGENT SERVICE<br>ORDER NOW!</a>
-      </div><!-- .col -->
-      <div class="col-md-6">
-        <a id="ContactUsPopup" onclick="PopupContactUs();" class="hidden-sm hidden-xs btn btn-block btn-info" href="#">CONTACT US<br>NOW!</a>
-      </div><!-- .col -->
-      <div class="col-md-6">
-        <a id="ContactUsPopup" onclick="PopupContactUsMobile();" class="hidden-lg hidden-md btn btn-3d btn-info" href="#">CONTACT US<br>NOW!</a>
-      </div><!-- .col -->
-      <div class="col-md-6">
         <a class="hidden-lg hidden-md btn btn-block btn-info" href="tel:+18002462677">CLICK TO<br>CALL US</a>
+      </div><!-- .col -->
+      <div class="col-md-6 spacer">
+        <a id="ContactUsPopup" onclick="PopupContactUs();" class="hidden-sm hidden-xs btn btn-block btn-info" href="#">CONTACT US<br>NOW!</a>
+        <a id="ContactUsPopup" onclick="PopupContactUsMobile();" class="hidden-lg hidden-md btn btn-block btn-info" href="#">CONTACT US<br>NOW!</a>
       </div><!-- .col -->
 
       <div class="col-md-12">
