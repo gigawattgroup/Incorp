@@ -30,6 +30,8 @@ $brand-info:      $color__secondary;
 // overwrite bootstrap main body text color
 $text-color:         #5b5b5b;
 
+$link-color: $color__secondary;
+
 
 // overwrite bootstrap navigation colors
 $navbar-default-color:             $color__light;
@@ -42,11 +44,14 @@ $navbar-default-link-hover-color:          $color__light;
 $navbar-default-link-hover-bg:             $color__secondary;
 $navbar-default-link-active-color:         $color__light;
 $navbar-default-link-active-bg:            $color__tertiary;
-$navbar-default-link-disabled-color:       #ccc !default;
-$navbar-default-link-disabled-bg:          transparent !default;
 
-// overwrite bootstrap Border color for inputs on focus
+// overwrite bootstrap border color for inputs on focus
 $input-border-focus: $color__accent;
+
+
+// overwrite bootstrap colors for form feedback states and, by default, alerts.
+$state-success-text:             $color__accent;
+$state-info-text:                $color__secondary;
 
 // overwrite bootstrap horizontal hr
 $hr-border: #ccc;
