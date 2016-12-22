@@ -1,3 +1,17 @@
+
+.bg-navy { background-color: $color__primary; }
+.bg-blue { background-color: $color__secondary; }
+.bg-green { background-color: $color__accent; }
+
+.text-navy { color: $color__primary; }
+.text-blue { color: $color__secondary; }
+.text-green { color: $color__accent; }
+
+/*! Use .vcenter class to center two columns,
+but make sure to put <-- -->
+btween the end of the first and begining of second col
+to remove any whitespace */
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;

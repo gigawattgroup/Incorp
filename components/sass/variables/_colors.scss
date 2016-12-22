@@ -49,3 +49,8 @@ $navbar-default-link-disabled-bg:          transparent !default;
 
 // overwrite bootstrap border color for inputs on focus
 $input-border-focus: $color__accent;
+
+
+// overwrite bootstrap colors for form feedback states and, by default, alerts.
+$state-success-text:             $color__accent;
+$state-info-text:                $color__secondary;
