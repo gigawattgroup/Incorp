@@ -27,8 +27,9 @@ $brand-primary:   $color__primary;
 $brand-success:   $color__accent;
 $brand-info:      $color__secondary;
 
-// overwrite bootstrap main body text color
+// overwrite bootstrap main body background and text color
 $text-color:         #5b5b5b;
+$body-bg:            $color__gray;
 
 $link-color: $color__secondary;
 
