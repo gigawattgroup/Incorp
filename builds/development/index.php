@@ -27,7 +27,7 @@
       <div class="container">
           <h2>Price Quote</h2>
           <p class="lead">INCORP will beat any competitor’s price on on any product or service guaranteed!</p>
-          <button class="btn btn-lg btn-primary">Get Price Quote</button>
+          <button class="btn btn-lg btn-info">Get Price Quote</button>
       </div><!-- .container -->
     </section><!-- .quotes -->
 

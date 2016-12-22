@@ -1486,7 +1486,7 @@ hr {
   margin-top: 25px;
   margin-bottom: 25px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #ccc;
 }
 
 .sr-only {
@@ -11160,7 +11160,7 @@ body {
   width: 100%;
   border-bottom: 3px solid #0489d9;
   z-index: 1000;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in;
 }
 
 #masthead .topbar {
@@ -11170,7 +11170,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   color: #707070;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in;
 }
 
 #masthead .topbar a, #masthead .topbar a:visited {
@@ -12144,17 +12144,13 @@ body {
 #quotewidth {
   padding-left: 80px;
   padding-right: 80px;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   #quotewidth {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  #quotewidth {
-    text-align: center;
+    text-align: right;
   }
 }
 
@@ -12208,6 +12204,86 @@ body {
   #landing-intro .wizard {
     margin-top: 0;
   }
+}
+
+#form {
+  background: #f6f6f6;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+#form .form_sect_headings {
+  color: #0489d9;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: thin solid #0489d9;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+#form .selections {
+  font-weight: 400;
+  display: inline;
+}
+
+#form #order_summary_box {
+  position: absolute;
+  height: auto;
+  max-width: 400px;
+  border: 1.5px solid #ccc;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+#form #order_summary_box #order_title, #form #order_summary_box #order_total {
+  text-align: left;
+  text-transform: uppercase;
+  border-right: none;
+  border-left: none;
+}
+
+#form #order_summary_box #order_title {
+  border-top: none;
+  border-bottom: thin solid #ccc;
+  padding-bottom: 5px;
+}
+
+#form #order_summary_box #order_total, #form #order_summary_box #order_total_amount {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+#form #order_summary_box #order_total_amount {
+  float: right;
+}
+
+#form #order_summary_box #services_selected, #form #order_summary_box #services_quantity {
+  list-style: none;
+  padding-left: 0;
+  display: inline;
+}
+
+#form #order_summary_box .order_list_titles {
+  font-weight: 400;
+  display: inline;
+}
+
+#form #order_summary_box #services_selected {
+  float: left;
+}
+
+#form #order_summary_box #services_quantity {
+  float: right;
+  text-align: right;
+}
+
+#form #order_summary_box #order_summary_button {
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
