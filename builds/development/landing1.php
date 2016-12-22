@@ -1,6 +1,7 @@
 <?php include_once '_header.php'; ?>
 
 <section id="landing-intro">
+  <div class="overlay"></div>
 <div class="container">
     <div class="row">
       <div class="col-md-8 vcenter">
@@ -13,10 +14,9 @@
             <div class="form-group">
               <select class="form-control">
                 <option>Registered Agent Services</option>
-                <option>Incorporation / Formation Services</option>
-                <option>Certificate of Good Standing</option>
-                <option>Foreign Qualifications</option>
-                <option>Dissolution/Withdrawal/Cancellation</option>
+                <option>Form a Corporation</option>
+                <option>Form an LLC</option>
+                <option>Create a DBA</option>
               </select>
             </div>
             <div class="form-group">
