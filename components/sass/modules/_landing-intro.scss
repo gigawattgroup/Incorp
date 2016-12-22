@@ -1,0 +1,45 @@
+#landing-intro {
+  position: relative;
+  width: 100%;
+  background-color: $intro-bg;
+  color: $intro-color;
+  background-image: url('../images/intro2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  @include breakpoint($screen-md) {
+    min-height: 300px;
+  }
+
+  .container {
+    padding: 70px 15px;
+    z-index: 2;
+    position: relative;
+  }
+
+  h1, h2 {
+    font-size: 28px;
+    @include breakpoint($screen-md) {
+      font-size: 36px;
+    }
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+
+  .wizard {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: rgba($color__light, .7);
+    @include shadow-2dp();
+
+    margin-top: 25px;
+    @include breakpoint($screen-md) {
+      margin-top: 0;
+    }
+  }
+
+} // #landing-intro

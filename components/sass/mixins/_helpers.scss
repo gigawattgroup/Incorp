@@ -1,3 +1,25 @@
+
+.bg-navy { background-color: $color__primary; }
+.bg-blue { background-color: $color__secondary; }
+.bg-green { background-color: $color__accent; }
+.bg-gray { background-color: $color__accent; }
+.bg-dark { background-color: $color__accent; }
+
+.text-navy { color: $color__primary; }
+.text-blue { color: $color__secondary; }
+.text-green { color: $color__accent; }
+
+/*! Use .vcenter class to center two columns,
+but make sure to put <-- -->
+btween the end of the first and begining of second col
+to remove any whitespace */
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 .vertical-center {
 
   height:100%;
@@ -36,4 +58,34 @@
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
+}
+
+
+// shadow classes
+.mdl-shadow--2dp {
+  @include shadow-2dp();
+}
+
+.mdl-shadow--3dp {
+  @include shadow-3dp();
+}
+
+.mdl-shadow--4dp {
+  @include shadow-4dp();
+}
+
+.mdl-shadow--6dp {
+  @include shadow-6dp();
+}
+
+.mdl-shadow--8dp {
+  @include shadow-8dp();
+}
+
+.mdl-shadow--16dp {
+  @include shadow-16dp();
+}
+
+.mdl-shadow--24dp {
+  @include shadow-24dp();
 }

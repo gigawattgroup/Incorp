@@ -7,7 +7,7 @@
  * Version: 1.0.0
  */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS: 
+>>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # variables
   ## color
@@ -15,11 +15,15 @@
 # libraries
 # mixins
 # elements
+# forms
+  ## fields
   ## buttons
 # layout
   ## header
   ## navigation
   ## footer
+  ## breadcrumbs
+  ## modal
 # pages
   ## intro
 # print
@@ -1430,12 +1434,12 @@ textarea {
 }
 
 a {
-  color: #004f94;
+  color: #0489d9;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #002648;
+  color: #035a8e;
   text-decoration: underline;
 }
 
@@ -1672,21 +1676,21 @@ a.text-primary:focus {
 }
 
 .text-success {
-  color: #3c763d;
+  color: #55c15d;
 }
 
 a.text-success:hover,
 a.text-success:focus {
-  color: #2b542c;
+  color: #3da644;
 }
 
 .text-info {
-  color: #31708f;
+  color: #0489d9;
 }
 
 a.text-info:hover,
 a.text-info:focus {
-  color: #245269;
+  color: #0369a7;
 }
 
 .text-warning {
@@ -3421,27 +3425,27 @@ select[multiple].input-lg,
 .has-success.checkbox label,
 .has-success.radio-inline label,
 .has-success.checkbox-inline label {
-  color: #3c763d;
+  color: #55c15d;
 }
 
 .has-success .form-control {
-  border-color: #3c763d;
+  border-color: #55c15d;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .has-success .form-control:focus {
-  border-color: #2b542c;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  border-color: #3da644;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #a0dca4;
 }
 
 .has-success .input-group-addon {
-  color: #3c763d;
-  border-color: #3c763d;
+  color: #55c15d;
+  border-color: #55c15d;
   background-color: #dff0d8;
 }
 
 .has-success .form-control-feedback {
-  color: #3c763d;
+  color: #55c15d;
 }
 
 .has-warning .help-block,
@@ -3994,7 +3998,7 @@ fieldset[disabled] .btn-danger.focus {
 }
 
 .btn-link {
-  color: #004f94;
+  color: #0489d9;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4010,7 +4014,7 @@ fieldset[disabled] .btn-link {
 }
 
 .btn-link:hover, .btn-link:focus {
-  color: #002648;
+  color: #035a8e;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4648,7 +4652,7 @@ tbody.collapse.in {
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #004f94;
+  border-color: #0489d9;
 }
 
 .nav .nav-divider {
@@ -5419,7 +5423,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.846153846;
   text-decoration: none;
-  color: #004f94;
+  color: #0489d9;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -5442,7 +5446,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #002648;
+  color: #035a8e;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -5670,7 +5674,7 @@ a.label:hover, a.label:focus {
 
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #004f94;
+  color: #0489d9;
   background-color: #fff;
 }
 
@@ -5770,7 +5774,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #004f94;
+  border-color: #0489d9;
 }
 
 .alert {
@@ -5814,7 +5818,7 @@ a.thumbnail.active {
 .alert-success {
   background-color: #dff0d8;
   border-color: #d6e9c6;
-  color: #3c763d;
+  color: #55c15d;
 }
 
 .alert-success hr {
@@ -5822,13 +5826,13 @@ a.thumbnail.active {
 }
 
 .alert-success .alert-link {
-  color: #2b542c;
+  color: #3da644;
 }
 
 .alert-info {
   background-color: #d9edf7;
   border-color: #bce8f1;
-  color: #31708f;
+  color: #0489d9;
 }
 
 .alert-info hr {
@@ -5836,7 +5840,7 @@ a.thumbnail.active {
 }
 
 .alert-info .alert-link {
-  color: #245269;
+  color: #0369a7;
 }
 
 .alert-warning {
@@ -6086,13 +6090,13 @@ button.list-group-item {
 }
 
 .list-group-item-success {
-  color: #3c763d;
+  color: #55c15d;
   background-color: #dff0d8;
 }
 
 a.list-group-item-success,
 button.list-group-item-success {
-  color: #3c763d;
+  color: #55c15d;
 }
 
 a.list-group-item-success .list-group-item-heading,
@@ -6103,7 +6107,7 @@ button.list-group-item-success .list-group-item-heading {
 a.list-group-item-success:hover, a.list-group-item-success:focus,
 button.list-group-item-success:hover,
 button.list-group-item-success:focus {
-  color: #3c763d;
+  color: #55c15d;
   background-color: #d0e9c6;
 }
 
@@ -6112,18 +6116,18 @@ button.list-group-item-success.active,
 button.list-group-item-success.active:hover,
 button.list-group-item-success.active:focus {
   color: #fff;
-  background-color: #3c763d;
-  border-color: #3c763d;
+  background-color: #55c15d;
+  border-color: #55c15d;
 }
 
 .list-group-item-info {
-  color: #31708f;
+  color: #0489d9;
   background-color: #d9edf7;
 }
 
 a.list-group-item-info,
 button.list-group-item-info {
-  color: #31708f;
+  color: #0489d9;
 }
 
 a.list-group-item-info .list-group-item-heading,
@@ -6134,7 +6138,7 @@ button.list-group-item-info .list-group-item-heading {
 a.list-group-item-info:hover, a.list-group-item-info:focus,
 button.list-group-item-info:hover,
 button.list-group-item-info:focus {
-  color: #31708f;
+  color: #0489d9;
   background-color: #c4e3f3;
 }
 
@@ -6143,8 +6147,8 @@ button.list-group-item-info.active,
 button.list-group-item-info.active:hover,
 button.list-group-item-info.active:focus {
   color: #fff;
-  background-color: #31708f;
-  border-color: #31708f;
+  background-color: #0489d9;
+  border-color: #0489d9;
 }
 
 .list-group-item-warning {
@@ -6552,7 +6556,7 @@ button.list-group-item-danger.active:focus {
 }
 
 .panel-success > .panel-heading {
-  color: #3c763d;
+  color: #55c15d;
   background-color: #dff0d8;
   border-color: #d6e9c6;
 }
@@ -6563,7 +6567,7 @@ button.list-group-item-danger.active:focus {
 
 .panel-success > .panel-heading .badge {
   color: #dff0d8;
-  background-color: #3c763d;
+  background-color: #55c15d;
 }
 
 .panel-success > .panel-footer + .panel-collapse > .panel-body {
@@ -6575,7 +6579,7 @@ button.list-group-item-danger.active:focus {
 }
 
 .panel-info > .panel-heading {
-  color: #31708f;
+  color: #0489d9;
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
@@ -6586,7 +6590,7 @@ button.list-group-item-danger.active:focus {
 
 .panel-info > .panel-heading .badge {
   color: #d9edf7;
-  background-color: #31708f;
+  background-color: #0489d9;
 }
 
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
@@ -10987,6 +10991,49 @@ button.close {
 /*--------------------------------------------------------------
 # mixins
 --------------------------------------------------------------*/
+/* Shadows */
+.bg-navy {
+  background-color: #004f94;
+}
+
+.bg-blue {
+  background-color: #0489d9;
+}
+
+.bg-green {
+  background-color: #55c15d;
+}
+
+.bg-gray {
+  background-color: #55c15d;
+}
+
+.bg-dark {
+  background-color: #55c15d;
+}
+
+.text-navy {
+  color: #004f94;
+}
+
+.text-blue {
+  color: #0489d9;
+}
+
+.text-green {
+  color: #55c15d;
+}
+
+/*! Use .vcenter class to center two columns,
+but make sure to put <-- -->
+btween the end of the first and begining of second col
+to remove any whitespace */
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
 .vertical-center, #masthead .topbar {
   height: 100%;
   width: 100%;
@@ -11023,8 +11070,48 @@ button.close {
   margin-right: -4px;
 }
 
+.mdl-shadow--2dp {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mdl-shadow--3dp {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.mdl-shadow--4dp {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--6dp {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--8dp {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--16dp {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.mdl-shadow--24dp {
+  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+}
+
 /*--------------------------------------------------------------
 # elements
+--------------------------------------------------------------*/
+a {
+  font-weight: normal;
+}
+
+.lead, #newsletter label, #pricedescript label {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*--------------------------------------------------------------
+# forms
 --------------------------------------------------------------*/
 .btn {
   text-transform: uppercase;
@@ -11453,32 +11540,6 @@ body {
   }
 }
 
-#breadcrumb {
-  background-color: #ffffff;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-#bread_currentpage, .bread_parentpage {
-  color: #5b5b5b;
-  font-size: 12px;
-  letter-spacing: .5px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-#bread_currentpage:hover, .bread_parentpage:hover {
-  text-decoration: none;
-}
-
-.bread_parentpage {
-  font-weight: 300;
-}
-
-#bread_currentpage {
-  font-weight: 600;
-}
-
 #colophon {
   width: 100%;
   color: #949494;
@@ -11575,6 +11636,42 @@ body {
   height: auto;
   max-width: 225px;
   margin-bottom: 30px;
+}
+
+#breadcrumbs {
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #efefef;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.breadcrumb li, .breadcrumb a {
+  color: #5b5b5b;
+  font-size: 12px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.breadcrumb li.active, .breadcrumb a.active {
+  font-weight: 600;
+}
+
+#expert-contact-form .modal-content {
+  background-color: #0489d9;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  #expert-contact-form .modal-dialog {
+    width: 450px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -11889,6 +11986,11 @@ body {
   min-width: 150px;
 }
 
+#content .container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
 #table {
   background: #f6f6f6;
   padding-top: 30px;
@@ -12049,6 +12151,58 @@ body {
 @media (min-width: 992px) {
   #quotewidth {
     text-align: right;
+  }
+}
+
+#landing-intro {
+  position: relative;
+  width: 100%;
+  background-color: #00192e;
+  color: #ffffff;
+  background-image: url("../images/intro2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  #landing-intro {
+    min-height: 300px;
+  }
+}
+
+#landing-intro .container {
+  padding: 70px 15px;
+  z-index: 2;
+  position: relative;
+}
+
+#landing-intro h1, #landing-intro h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 992px) {
+  #landing-intro h1, #landing-intro h2 {
+    font-size: 36px;
+  }
+}
+
+#landing-intro .wizard {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin-top: 25px;
+}
+
+@media (min-width: 992px) {
+  #landing-intro .wizard {
+    margin-top: 0;
   }
 }
 
