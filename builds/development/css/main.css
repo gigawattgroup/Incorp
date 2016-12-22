@@ -1421,7 +1421,7 @@ body {
   font-size: 14px;
   line-height: 1.846153846;
   color: #5b5b5b;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 
 input,
@@ -1469,7 +1469,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.846153846;
-  background-color: #fff;
+  background-color: #f6f6f6;
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
@@ -2776,7 +2776,7 @@ th {
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 
 .table-condensed > thead > tr > th,
@@ -4688,7 +4688,7 @@ tbody.collapse.in {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #fff;
+  background-color: #f6f6f6;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4771,7 +4771,7 @@ tbody.collapse.in {
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
   .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: #f6f6f6;
   }
 }
 
@@ -5751,7 +5751,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 25px;
   line-height: 1.846153846;
-  background-color: #fff;
+  background-color: #f6f6f6;
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: border 0.2s ease-in-out;
@@ -11991,12 +11991,6 @@ body {
   margin-bottom: 50px;
 }
 
-#table {
-  background: #f6f6f6;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 #table .list_title {
   color: #949494;
   font-weight: 500;
@@ -12014,17 +12008,17 @@ body {
   margin-right: auto;
 }
 
-#table h2, #table li {
+#table h2.table_left, #table li {
   margin-bottom: 5px;
 }
 
-#table h2 {
+#table h2.table_left {
   padding-bottom: 30px;
   text-align: center;
 }
 
 @media (min-width: 992px) {
-  #table h2 {
+  #table h2.table_left {
     text-align: right;
   }
 }
@@ -12073,15 +12067,23 @@ body {
   }
 }
 
-#table #blueprice, #table #blueprice_s {
+#table #blueprice, #table #blueprice_s, #table #blueprice_cents {
   color: #0489d9;
   font-weight: 600;
+}
+
+#table #blueprice, #table #blueprice_s {
   display: inline-block;
 }
 
 #table #blueprice {
   font-size: 80px;
   margin-bottom: -20px;
+}
+
+#table #blueprice_cents {
+  font-size: 60px;
+  margin-bottom: -30px;
 }
 
 #table #blueprice_s {
@@ -12091,7 +12093,6 @@ body {
 #table #greenbg {
   background-color: #55c15d;
   color: #ffffff;
-  text-align: center;
   width: auto;
   padding-top: 10px;
   padding-bottom: 3px;

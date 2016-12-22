@@ -1,7 +1,4 @@
 #table {
-  background: $color__gray;
-  padding-top: 30px;
-  padding-bottom: 30px;
 
   .list_title{
     color: $footer-color;
@@ -20,11 +17,11 @@
     margin-right: auto;
   }
 
-  h2, li {
+  h2.table_left, li {
     margin-bottom: 5px;
   }
 
-  h2 {
+  h2.table_left {
     padding-bottom: 30px;
     text-align: center;
     @include breakpoint($screen-md) {
@@ -69,15 +66,23 @@
     }
   }
 
-  #blueprice, #blueprice_s {
+  #blueprice, #blueprice_s, #blueprice_cents {
     color: $color__secondary;
     font-weight: 600;
+  }
+
+  #blueprice, #blueprice_s {
     display: inline-block;
   }
 
   #blueprice {
       font-size: 80px;
       margin-bottom: -20px;
+  }
+
+  #blueprice_cents {
+      font-size: 60px;
+      margin-bottom: -30px;
   }
 
   #blueprice_s {
@@ -87,7 +92,6 @@
   #greenbg {
     background-color: $color__accent;
     color: $color__light;
-    text-align: center;
     width: auto;
     padding-top: 10px;
     padding-bottom: 3px;

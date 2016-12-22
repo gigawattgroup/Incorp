@@ -17,13 +17,13 @@
         <div class="col-md-1 col-lg-offset-1"></div>
 
         <div class="col-md-5 col-lg-4" id="quotewidth">
-          <h2>WHAT’S INCLUDED WITH REGISTERED AGENT SERVICE?</h2>
+          <h2 id="table_left">What's Included with Registered Agent Services?</h2>
           <p>For just $99 per year, you’ll receive InCorp’s address for Registered Agent service and a suite of services to help manage your business. All of this is included!</p>
         </div>
 
         <div class="col-md-5 col-lg-4">
           <div id="tabledeal">
-            <div id="greenbg"><p>GREAT DEAL!</p></div>
+            <div id="greenbg" class="text-center"><p>GREAT DEAL!</p></div>
             <div id="tablebg">
               <div class="price-center">
                 <p id="blueprice">$99</p>
