@@ -5,7 +5,8 @@
 <div class="container">
     <div class="row">
       <div class="col-md-8 vcenter">
-        <h1>Alabama Registered Agent Service Only $99/Year!</h1>
+        <h1>Alabama Registered Agent Service</h1>
+        <h2>Only $99/Year!</h2>
       </div><!-- ** IMPORTANT: keep this comment between two columns to avoid any space **
     --><div class="col-md-4 vcenter">
         <div class="wizard">

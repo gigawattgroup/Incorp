@@ -12146,12 +12146,12 @@ body {
 }
 
 #table .list_title {
-  color: #949494;
-  font-weight: 500;
+  color: #5b5b5b;
+  font-weight: normal;
   display: inline;
 }
 
-#table .collapse {
+#table .out {
   padding-right: 30px;
 }
 
@@ -12162,11 +12162,8 @@ body {
   margin-right: auto;
 }
 
-#table h2, #table li {
-  margin-bottom: 5px;
-}
-
 #table h2 {
+  margin-bottom: 5px;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -12178,6 +12175,7 @@ body {
 }
 
 #table li {
+  margin-bottom: 5px;
   color: #949494;
   list-style-image: url("../images/info_bullet.png");
   cursor: pointer;
@@ -12197,10 +12195,6 @@ body {
 
 #table .arrow_direction.active::before {
   width: 30px;
-}
-
-#table .collapse {
-  padding-bottom: 15px;
 }
 
 #table #tabledeal {
@@ -12258,7 +12252,7 @@ body {
   display: inline;
 }
 
-#table button {
+#table .btn {
   margin-bottom: 30px;
   margin-top: 15px;
 }

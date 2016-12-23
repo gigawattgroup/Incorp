@@ -72,7 +72,8 @@ y),b(document.body).on("sticky_kit:recalc",y),a.on("sticky_kit:detach",H),setTim
   minWidth =  '(min-width: '+breakpointSM+'px)',
   minWidthMD = '(min-width: '+breakpointMD+'px)',
   isIntro = $("#intro").length,
-  stickyElem = $(".stick-to-header");
+  stickyElem = $(".stick-to-header"),
+  searchBtn = $(".search-toggle");
 
   // dropdown on hover
   toggleMenuHover(minWidth);
@@ -114,9 +115,13 @@ y),b(document.body).on("sticky_kit:recalc",y),a.on("sticky_kit:detach",H),setTim
 	});
 
   // search toggle
-  $(".search-toggle a").on('click touchstart',function(){
+  $(".search-toggle a").on('click touchstart',function(e){
+      e.preventDefault();
       $(".search-box-wrapper").slideToggle('slow', function(){
           $('.search-toggle').toggleClass('active');
+          if ($('.search-toggle.active')) {
+            this.blur();
+          }
       });
       return false;
   });

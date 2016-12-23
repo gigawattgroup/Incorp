@@ -4,12 +4,12 @@
   padding-bottom: 30px;
 
   .list_title{
-    color: $footer-color;
-    font-weight: 500;
+    color: $text-color;
+    font-weight: normal;
     display: inline;
   }
 
-  .collapse {
+  .out {
     padding-right: 30px;
   }
 
@@ -20,11 +20,9 @@
     margin-right: auto;
   }
 
-  h2, li {
-    margin-bottom: 5px;
-  }
 
   h2 {
+    margin-bottom: 5px;
     padding-bottom: 30px;
     text-align: center;
     @include breakpoint($screen-md) {
@@ -33,6 +31,7 @@
   }
 
   li {
+    margin-bottom: 5px;
     color: $footer-color;
     list-style-image: url('../images/info_bullet.png');
     cursor: pointer;
@@ -48,10 +47,6 @@
     &.active {
       @include icon('chevron-down');
     }
-  }
-
-  .collapse{
-    padding-bottom: 15px;
   }
 
   #tabledeal {
@@ -106,7 +101,7 @@
     display: inline;
   }
 
-  button {
+  .btn {
     margin-bottom: 30px;
     margin-top: 15px;
   }
