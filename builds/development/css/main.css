@@ -1421,7 +1421,7 @@ body {
   font-size: 14px;
   line-height: 1.846153846;
   color: #5b5b5b;
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 
 input,
@@ -1469,7 +1469,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.846153846;
-  background-color: #fff;
+  background-color: #f6f6f6;
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
@@ -2776,7 +2776,7 @@ th {
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #f6f6f6;
 }
 
 .table-condensed > thead > tr > th,
@@ -4688,7 +4688,7 @@ tbody.collapse.in {
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #fff;
+  background-color: #f6f6f6;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4771,7 +4771,7 @@ tbody.collapse.in {
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
   .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #fff;
+    border-bottom-color: #f6f6f6;
   }
 }
 
@@ -5751,7 +5751,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 25px;
   line-height: 1.846153846;
-  background-color: #fff;
+  background-color: #f6f6f6;
   border: 1px solid #ddd;
   border-radius: 4px;
   transition: border 0.2s ease-in-out;
