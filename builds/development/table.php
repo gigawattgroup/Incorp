@@ -26,8 +26,8 @@
             <div id="greenbg" class="text-center"><p>GREAT DEAL!</p></div>
             <div id="tablebg">
               <div class="text-center">
-                <p class="blueprice">$99</p>
-                <p class="blueprice_s">Per Year</p>
+                <p class="price-xlg">$99</p>
+                <p class="price-sub">Per Year</p>
                 <img src="images/bluedivider.png" alt="divider">
               </div> <!-- #text-center -->
               <div id="price-bullets">

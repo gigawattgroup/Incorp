@@ -37,8 +37,8 @@
               <div id="greenbg" class="text-center"><p>MOST POPULAR</p></div>
               <div class="graybg text-center center-block"><p class="text-uppercase">2 Years</p></div>
               <div class="tablebg text-center">
-                <p class="blueprice_cents">$89.10</p>
-                <p class="blueprice_s">Per Year</p>
+                <p class="price-lg">$89.10</p>
+                <p class="price-sub">Per Year</p>
                 <img src="images/bluedivider.png" alt="divider">
                 <p class="text-center">You save <strong>$19.10!</strong></p>
                 <button class="btn btn-md btn-info">Get Started</button>
@@ -49,8 +49,8 @@
             <div class="tabledeal-reg">
               <div class="graybg text-center center-block"><p class="text-uppercase">3 Years</p></div>
               <div class="tablebg text-center">
-                <p class="blueprice_cents">$80.52</p>
-                <p class="blueprice_s">Per Year</p>
+                <p class="price-lg">$80.52</p>
+                <p class="price-sub">Per Year</p>
                 <img src="images/bluedivider.png" alt="divider">
                 <p class="text-center">You save <strong>$55.44!</strong></p>
                 <button class="btn btn-md btn-info">Get Started</button>
@@ -61,8 +61,8 @@
             <div class="tabledeal-reg">
               <div class="graybg text-center center-block"><p class="text-uppercase">4 Years</p></div>
               <div class="tablebg text-center">
-                <p class="blueprice_cents">$73.06</p>
-                <p class="blueprice_s">Per Year</p>
+                <p class="price-lg">$73.06</p>
+                <p class="price-sub">Per Year</p>
                 <img src="images/bluedivider.png" alt="divider">
                 <p class="text-center">You save <strong>$103.75!</strong></p>
                 <button class="btn btn-md btn-info">Get Started</button>
@@ -73,8 +73,8 @@
             <div class="tabledeal-reg">
               <div class="graybg text-center center-block"><p class="text-uppercase">5 Years</p></div>
               <div class="tablebg text-center">
-                <p class="blueprice_cents">$66.56</p>
-                <p class="blueprice_s">Per Year</p>
+                <p class="price-lg">$66.56</p>
+                <p class="price-sub">Per Year</p>
                 <img src="images/bluedivider.png" alt="divider">
                 <p class="text-center">You save <strong>$162.20!</strong></p>
                 <button class="btn btn-md btn-info">Get Started</button>
@@ -90,24 +90,26 @@
       <div class="row"><div class="col-md-12"><hr></div></div>
 
       <section id="entity-types">
-        <div class="row"><div class="col-md-12"><h2 class="text-center">Compare Entity Types</h2></div></div>
-        <div class="row"><div class="col-md-12">
-          <button type="button" class="btn btn-primary btn-sm text-capitalize">Limited Liability Company</button>
-          <button type="button" class="btn btn-primary btn-sm">C-Corporation</button>
-          <button type="button" class="btn btn-primary btn-sm">S-Corporation</button>
-          <button type="button" class="btn btn-primary btn-sm">Limited Liability Partnership</button>
-          <button type="button" class="btn btn-primary btn-sm">Non-Profit Corporation</button>
-          <button type="button" class="btn btn-primary btn-sm">Limited Partnership</button>
-          <button type="button" class="btn btn-primary btn-sm">Sole Proprietor</button>
-        </div></div>
         <div class="row">
           <div class="col-md-12">
-            <h3 class="text-center">Limited Liability Company</h3>
-            <img src="images/limitedliability_icon.png" alt="monument icon" class="center-block">
+            <h2 class="text-center">Compare Entity Types</h2>
           </div>
-        </div>
-        <div class="row"><div class="col-md-12"><hr></div></div>
-        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <button type="button" class="btn btn-primary btn-sm text-capitalize">Limited Liability Company</button>
+              <button type="button" class="btn btn-primary btn-sm">C-Corporation</button>
+              <button type="button" class="btn btn-primary btn-sm">S-Corporation</button>
+              <button type="button" class="btn btn-primary btn-sm">Limited Liability Partnership</button>
+              <button type="button" class="btn btn-primary btn-sm">Non-Profit Corporation</button>
+              <button type="button" class="btn btn-primary btn-sm">Limited Partnership</button>
+              <button type="button" class="btn btn-primary btn-sm">Sole Proprietor</button>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <h3 class="text-center">Limited Liability Company</h3>
+            <i class="fa fa-university" aria-hidden="true" style="font-size:24px;"></i>
+            <hr>
+          </div>
           <div class="col-md-6">
             <p class="text-center"><strong>Advantages</strong></p>
             <ul>
@@ -125,6 +127,7 @@
               <li><strong>Limited Life - </strong>In many states the LLC can elect to exist "perpetually" when filing the original articles. In other cases the LLC has an expiration date or ceases to exist when a member departs. This can often be resolved by specifying the handling of these events in the Operating Agreement.</li>
               <li><strong>Confusing Structure - </strong>Managers, Members, Managing Members and so on are not defined as well as the Officers and Directors of a corporation. This can lead to confusion unless it is clarified in the Operating Agreement.</li>
             </ul>
+          </div>
         </div><!-- .row -->
       </section><!-- #entity-types -->
 
@@ -243,55 +246,55 @@
 
       <div class="row"><div class="col-md-12"><hr></div></div>
 
-      <section id="legal_kits">
+      <section id="legal-kits">
+
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-12 text-center spacer">
             <h2>Corporate Record Kits / Corporate Seals / Stock Certificates</h2>
           </div>
         </div>
-        <div class="row"><div class="col-md-12"><p></p></div></div>
-        <div class="row bg-white">
-          <div class="col-md-3 bg-intro-color">
-                  <img src="images/legalkit_1.png" alt="legal kit 1" class="vertical-center">
-          </div><!-- col-md-3 -->
-          <div class="col-md-9 bg-intro-color">
+
+        <div class="legal-kit">
+          <div class="legal-kit-img">
+            <img src="images/legalkit_1.png" alt="legal kit 1">
+          </div>
+          <div class="legal-kit-body">
             <h3 class="">Attache Legal Kit</h3>
             <h4>$69</h4>
-            <p>The best legal kit currently on the market, this kit has a high quality black leatherette cover with brass highlights. A sturdy, well-designed presentation package with a handy carrying handle. Special features include pockets for business cards and a flip-out clear vinyl pocket for file reference. This all-in-one case also houses the patented MarkMaker® seal.</p>
+            <p>The best legal kit currently on the market, this kit has a high quality black leatherette cover with brass highlights. A sturdy, well-designed presentation package with a handy carrying handle. Special features include pockets for business cards and a flip-out clear vinyl pocket for file reference. This all-in-one case also houses the patented MarkMaker&reg; seal.</p>
             <button class="btn btn-md btn-info">Order Now!</button>
           </div>
-        </div><!-- .row -->
-        <div class="row"><div class="col-md-12"><p></p></div></div>
-        <div class="row bg-white">
-          <div class="col-md-3 bg-intro-color">
-            <div class="price-center">
-              <img src="images/legalkit_3.png" alt="legal kit 2" class="vertical-center">
-            </div> <!-- #price-center -->
-          </div><!-- col-md-3 -->
-          <div class="col-md-9 bg-intro-color">
+        </div><!-- .legal-kit -->
+
+        <div class="legal-kit">
+          <div class="legal-kit-img">
+            <img src="images/legalkit_2.png" alt="legal kit 1">
+          </div>
+          <div class="legal-kit-body">
             <h3 class="">Prestige Legal Kit</h3>
             <h4>$69</h4>
             <p>This kit offers all of the features and benefits of the Portfolio legal kit but with the Brass index plate on the spine. Special features include handy CD-ROM storage pocket, clear vinyl notepad holder all housed in a full-zippered leatherette case. Traditional coupled with portability and style.</p>
             <button class="btn btn-md btn-info">Order Now!</button>
           </div>
-        </div><!-- .row -->
-        <div class="row"><div class="col-md-12"><p></p></div></div>
-        <div class="row bg-white">
-          <div class="col-md-3 bg-intro-color">
-            <div class="price-center">
-              <img src="images/legalkit_3.png" alt="legal kit 3" class="vertical-center">
-            </div> <!-- #price-center -->
-          </div><!-- col-md-3 -->
-          <div class="col-md-9 bg-intro-color">
+        </div><!-- .legal-kit -->
+
+        <div class="legal-kit">
+          <div class="legal-kit-img">
+            <img src="images/legalkit_3.png" alt="legal kit 1">
+          </div>
+          <div class="legal-kit-body">
             <h3 class="">Legacy Legal Kit</h3>
             <h4>$69</h4>
             <p>A functional binder and slipcase format comes with all the standard contents as well as your choice of Pocket Seal or Legal Embosser. High-quality burgundy leatherette cover with gold detailing and brass minute book plate permanently adhered to spine for easy identification. Fits standard 12" shelving units.</p>
             <button class="btn btn-md btn-info">Order Now!</button>
           </div>
-        </div><!-- .row -->
+        </div><!-- .legal-kit -->
+
       </section><!-- #legal_kits-->
 
       <div class="col-md-1 col-md-offset-1"></div>
+
+      <div class="row spacer"><div class="col-md-12"></div></div>
 
     </div><!-- .container -->
 

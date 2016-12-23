@@ -39,6 +39,7 @@
 
   // equial heights for homepage options
   $('#options .desc').setAllToMaxHeight();
+  $('.equal-height').setAllToMaxHeight();
 
   // testimonials carousel
   $('#testimonials-carousel').owlCarousel({
@@ -71,6 +72,7 @@
 
     // equial heights for homepage options
     $('#options .desc').setAllToMaxHeight();
+    $('.equal-height').setAllToMaxHeight();
 
     // dropdown on hover
     toggleMenuHover(minWidth);
@@ -160,10 +162,6 @@
   }
 
   stickToHeader(stickyElem, 134);
-
-
-
-
 
 
 })(jQuery);

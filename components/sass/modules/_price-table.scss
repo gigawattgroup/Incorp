@@ -70,7 +70,9 @@
     overflow: hidden;
   }
 
+
   #tabledeal {
+    @include shadow-8dp();
     @include breakpoint($screen-sm) {
       margin: 15px auto;
       width: auto;
@@ -78,34 +80,36 @@
   }
 
   .tabledeal-reg {
+    border-color: $color__secondary;
     @include breakpoint($screen-sm) {
       margin-top: 65px;
       width: auto;
     }
   }
 
-  .blueprice, .blueprice_s, .blueprice_cents {
-    color: $color__secondary;
-    font-weight: 600;
-  }
-
-  .blueprice, .blueprice_s {
+  .price-lg {
     display: inline-block;
+    color: $color__secondary;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: -30px;
   }
 
-  .blueprice {
+  .price-xlg{
+      @extend .price-lg;
       font-size: 80px;
       margin-bottom: -20px;
   }
 
-  .blueprice_cents {
-      font-size: 60px;
-      margin-bottom: -30px;
+  .price-sub {
+    display: inline-block;
+    color: $color__secondary;
+    font-size: 16px;
+    font-weight: 600;
   }
 
-  .blueprice_s {
-    font-size: 16px;
-  }
+
+
 
   #greenbg {
     background-color: $color__accent;
