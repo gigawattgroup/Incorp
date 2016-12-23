@@ -103,7 +103,7 @@
         <div class="row">
           <div class="col-md-12">
             <h3 class="text-center">Limited Liability Company</h3>
-            <img src="images/limitedliability_icon.png" alt="monument icon" class="center-block">
+            <i class="fa fa-university block-center" aria-hidden="true"></i>
           </div>
         </div>
         <div class="row"><div class="col-md-12"><hr></div></div>
