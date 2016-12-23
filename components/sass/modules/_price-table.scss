@@ -5,9 +5,11 @@
   }
 
   .list_title{
+    color: $text-color;
     font-weight: normal;
     display: inline;
   }
+
 
   .tablebg {
     padding-left: 10px;
@@ -38,6 +40,7 @@
   }
 
   li {
+    margin-bottom: 5px;
     color: $footer-color;
     list-style-image: url('../images/info_bullet.png');
     cursor: pointer;
@@ -131,7 +134,7 @@
     display: inline;
   }
 
-  button {
+  .btn {
     margin-bottom: 30px;
     margin-top: 15px;
   }

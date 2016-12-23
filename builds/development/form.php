@@ -12,15 +12,14 @@
 
   <section id="form">
     <div class="container">
+      <form method="post">
       <div class="row">
-
         <div class="col-md-7">
 
-          <form>
             <div class="form-group">
               <div class="row">
                 <div class="col-xs-12">
-                  <p class="form_sect_headings">Contact Info</p>
+                  <p class="heading">Contact Info</p>
                 </div>
                 <div class="col-xs-12">
                   <label for="ex2">Name</label> <!-- row has 1 title -->
@@ -138,7 +137,7 @@
             <div class="form-group">
               <div class="row">
                 <div class="col-xs-12">
-                  <p class="form_sect_headings">Contact Info</p>
+                  <p class="heading">Contact Info</p>
                 </div>
                 <div class="col-xs-12">
                   <label for="ex2">Name</label> <!-- row has 1 title -->
@@ -153,6 +152,7 @@
                 </div>
               </div>
             </div>
+
             <!-- Form Checkbox -->
             <div class="form-check">
               <label class="form-check-label">
@@ -166,13 +166,14 @@
                 <p class="selections">Subscribe to Our Newsletter</p>
               </label>
             </div>
+
             <!-- Form Radios -->
             <div class="row">
               <div class="col-xs-12">
-                <p class="form_sect_headings">Radios</p>
+                <p class="heading">Radios</p>
               </div>
             </div>
-            <fieldset class="form-group row">
+            <fieldset class="row form-group">
               <div class="col-sm-10">
                 <div class="form-check">
                   <label class="form-check-label">
@@ -200,15 +201,11 @@
                 </div>
               </div>
             </fieldset>
-            <!-- <button type="button" class="btn btn-lg btn-success" id="order_summary_button">Order Now</button> -->
-          </form>
 
         </div> <!-- .col-md-7 -->
 
-        <!--<div class="col-md-1"></div>-->
+        <div class="col-md-5 stick-to-header">
 
-        <div class="col-md-5">
-          <div id="tabledeal">
             <div id="order_summary_box"><p id="order_title">Your Order</p>
               <ul id="services_selected">
                 <li><p class="order_list_titles">Item</p></li>
@@ -223,12 +220,13 @@
               </ul><br><br><br><hr>
               <!--<p id="order_total"></p>-->
               <div id="order_total_amount">Total: $198.00</div><br><br>
-              <button type="button" class="btn btn-lg btn-success" id="order_summary_button">Order Now</button>
+              <button type="submit" class="btn btn-lg btn-success" id="order_summary_button">Order Now</button>
             </div>
-          </div><!-- #tabledeal -->
+
         </div><!-- .col-md-4 -->
 
         </div><!-- .row -->
+        </form>
       </div><!-- .container -->
   </section><!-- #table -->
 

@@ -1,11 +1,12 @@
 <?php include_once '_header.php'; ?>
 
 <section id="landing-intro">
+  <div class="overlay"></div>
 <div class="container">
     <div class="row">
       <div class="col-md-8 vcenter">
-        <h2>Incorporation / Corporation Formation</h2>
-        <h2>Services Form a Corporation Online!</h2>
+        <h1>Incorporation / Corporation Formation Services</h1>
+        <h2>Form a Corporation Online!</h2>
       </div><!-- ** IMPORTANT: keep this comment between two columns to avoid any space **
     --><div class="col-md-4 vcenter">
         <div class="wizard">
@@ -13,10 +14,9 @@
             <div class="form-group">
               <select class="form-control">
                 <option>Registered Agent Services</option>
-                <option>Incorporation / Formation Services</option>
-                <option>Certificate of Good Standing</option>
-                <option>Foreign Qualifications</option>
-                <option>Dissolution/Withdrawal/Cancellation</option>
+                <option>Form a Corporation</option>
+                <option>Form an LLC</option>
+                <option>Create a DBA</option>
               </select>
             </div>
             <div class="form-group">

@@ -26,6 +26,7 @@ module.exports = function(grunt) {
             'bower_components/jquery/dist/jquery.min.js',
             'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
             'bower_components/owl.carousel/dist/owl.carousel.min.js',
+            'bower_components/sticky-kit/jquery.sticky-kit.min.js',
             '<%= paths.src.js %>inc/*.js',
             '<%= paths.src.js %>*.js'
           ],

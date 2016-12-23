@@ -94,10 +94,10 @@
   </div><!-- .disclaimer -->
 
 </footer><!-- #colophon -->
-
+</div><!-- #wrapper -->
 <!-- Incorp JavaScript
 ================================================== -->
-<script src="js/main.js"></script>
-<script src="//incorp.dev:35729/livereload.js"></script>
+<script src="js/main.js?v=1.0.1"></script>
+
 </body>
 </html>

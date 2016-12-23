@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=1.0.1">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -14,7 +14,7 @@
     <![endif]-->
   </head>
   <body>
-
+  <div id="wrapper">
     <header id="masthead">
       <div class="topbar">
         <div class="container">
@@ -28,7 +28,7 @@
           <a class="navbar-brand" href="/"><h1 class="sr-only">Incorp</h1></a>
           <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
-          <div class="header-phone"><a href="#">1.800.246.2677</a></div>
+          <div class="header-phone"><a href="tel:+18002462677">1.800.246.2677</a></div>
           <div class="header-chat"><a href="#">Live Chat</a></div>
           <button type="button" class="btn btn-info btn-expert" data-toggle="modal" data-target="#expert-contact-form">Talk to an Expert</button>
         </div><!-- .container -->
@@ -98,10 +98,24 @@
             <li><a href="#about">About</a></li>
             <li><a href="#about">Help Center</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="search-toggle">
+    						<a href="#search-container">
+                  <div class="search-icon"><i class="fa fa-search"></i><span class="sr-only">Search This Website</span></div>
+                  <span class="search-text">Search</span>
+                </a>
+    				</li>
           </ul>
         </div><!-- #menu -->
         </div><!-- .container -->
       </nav>
+
+      <div class="search-box-wrapper">
+        <div class="search-box container">
+          <form method="post">
+            <input type="text" name="search" class="search-field" value="" placeholder="Search...">
+          </form>
+        </div>
+      </div>
 
     </header><!-- #masthead -->
 
