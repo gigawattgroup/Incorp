@@ -112,3 +112,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+builds/development/js/main.js
+
+builds/development/js/main.min.js
+
+builds/development/js/main.js
