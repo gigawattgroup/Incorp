@@ -160,7 +160,7 @@
   }
 
 
-  stickToHeader(stickyElem, 111);
+  stickToHeader(stickyElem, 134);
 
 
 
