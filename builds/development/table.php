@@ -10,26 +10,26 @@
 
   <?php include_once('_breadcrumbs.php'); ?>
 
-  <section id="table">
+  <section class="table">
     <div class="container">
       <div class="row">
 
         <div class="col-md-1 col-lg-offset-1"></div>
 
         <div class="col-md-5 col-lg-4" id="quotewidth">
-          <h2>WHAT’S INCLUDED WITH REGISTERED AGENT SERVICE?</h2>
+          <h2 id="table_left">What's Included with Registered Agent Services?</h2>
           <p>For just $99 per year, you’ll receive InCorp’s address for Registered Agent service and a suite of services to help manage your business. All of this is included!</p>
         </div>
 
         <div class="col-md-5 col-lg-4">
           <div id="tabledeal">
-            <div id="greenbg"><p>GREAT DEAL!</p></div>
+            <div id="greenbg" class="text-center"><p>GREAT DEAL!</p></div>
             <div id="tablebg">
-              <div class="price-center">
-                <p id="blueprice">$99</p>
-                <p id="blueprice_s">Per Year</p>
+              <div class="text-center">
+                <p class="blueprice">$99</p>
+                <p class="blueprice_s">Per Year</p>
                 <img src="images/bluedivider.png" alt="divider">
-              </div> <!-- #price-center -->
+              </div> <!-- #text-center -->
               <div id="price-bullets">
                 <ul>
                   <!-- Registered Agents -->
@@ -170,7 +170,7 @@
                 </ul>
               </div> <!-- #price-center -->
               <div class="price-center">
-                <button class="btn btn-lg btn-info">Get Started</button>
+                <button class="btn btn-lg btn-info center-block">Get Started</button>
               </div>
               </div>
             </div><!-- #tablebg -->

@@ -21,41 +21,29 @@
 but make sure to put <-- -->
 btween the end of the first and begining of second col
 to remove any whitespace */
-
 .vcenter {
     display: inline-block;
     vertical-align: middle;
     float: none;
 }
-
 .vertical-center {
-
   height:100%;
   width:100%;
-
   text-align: center;  /* align the inline(-block) elements horizontally */
   //font: 0/0 a;         /* remove the gap between inline(-block) elements */
-
-
     &:before {    /* create a full-height inline block pseudo=element */
       content: " ";
       display: inline-block;
       vertical-align: middle;    /* vertical alignment of the inline element */
       height: 100%;
     }
-
     & > .container {
       max-width: 100%;
-
       display: inline-block;
       vertical-align: middle;  /* vertical alignment of the inline element */
-
       //font: 14px/1.8 $font-family-sans-serif; /* reset the font property */
     }
-
 }
-
-
 .row-centered {
     text-align:center;
 }
@@ -67,33 +55,25 @@ to remove any whitespace */
     /* inline-block space fix */
     margin-right:-4px;
 }
-
-
 // shadow classes
 .mdl-shadow--2dp {
   @include shadow-2dp();
 }
-
 .mdl-shadow--3dp {
   @include shadow-3dp();
 }
-
 .mdl-shadow--4dp {
   @include shadow-4dp();
 }
-
 .mdl-shadow--6dp {
   @include shadow-6dp();
 }
-
 .mdl-shadow--8dp {
   @include shadow-8dp();
 }
-
 .mdl-shadow--16dp {
   @include shadow-16dp();
 }
-
 .mdl-shadow--24dp {
   @include shadow-24dp();
 }
