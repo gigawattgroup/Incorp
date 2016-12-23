@@ -1,11 +1,9 @@
 #form {
-  background: $color__gray;
+  background-color: $color__gray;
   padding-top: 10px;
   padding-bottom: 30px;
-  text-align: left;
-  //padding-left: 30px;
 
-  .form_sect_headings {
+  .heading {
     color: $color__secondary;
     font-weight: 400;
     text-transform: uppercase;

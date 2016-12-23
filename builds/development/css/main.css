@@ -11119,6 +11119,15 @@ to remove any whitespace */
   box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
 }
 
+@keyframes chatpointer {
+  from {
+    bottom: -15px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
 /*--------------------------------------------------------------
 # elements
 --------------------------------------------------------------*/
@@ -11140,6 +11149,85 @@ a {
 /*--------------------------------------------------------------
 # forms
 --------------------------------------------------------------*/
+/* Header Search */
+.search-icon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .search-icon {
+    display: inline-block;
+  }
+}
+
+.search-text {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .search-text {
+    display: none;
+  }
+}
+
+.search-toggle:hover,
+.search-toggle.active {
+  background-color: #efefef;
+  border-radius: 48px;
+}
+
+.search-toggle .screen-reader-text {
+  top: 0;
+  right: 0;
+}
+
+.search-box-wrapper {
+  display: none;
+  background-color: #0489d9;
+  z-index: 2;
+  width: 100%;
+}
+
+.search-box-wrapper:before, .search-box-wrapper:after {
+  content: " ";
+  display: table;
+}
+
+.search-box-wrapper:after {
+  clear: both;
+}
+
+.search-box {
+  padding: 1em;
+  height: 100%;
+  position: relative;
+}
+
+.search-box:before, .search-box:after {
+  content: " ";
+  display: table;
+}
+
+.search-box:after {
+  clear: both;
+}
+
+.search-box .search-field {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 1rem 2rem 1rem 4rem;
+  background-color: #ffffff;
+  border: 0;
+}
+
+.error404 .search-submit,
+.search .search-submit,
+.search-box .search-submit {
+  display: none;
+}
+
 .btn {
   text-transform: uppercase;
   border-radius: 0;
@@ -11178,9 +11266,26 @@ body {
   }
 }
 
+#wrapper {
+  min-height: 100%;
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+}
+
 #main {
-  -ms-flex: 1;
-      flex: 1;
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+}
+
+@-moz-document url-prefix() {
+  #main, #wrapper {
+    flex: 1;
+  }
 }
 
 #masthead {
@@ -11307,6 +11412,8 @@ body {
   border-color: transparent #55c15d;
   display: block;
   width: 0;
+  transition: all 0.5 ease-out;
+  z-index: -1;
 }
 
 #masthead .header .header-chat:hover {
@@ -11347,13 +11454,15 @@ body {
 }
 
 @media (min-width: 768px) {
+  #masthead .navbar-collapse {
+    padding: 0;
+  }
   #masthead.fixed-header-step, #masthead.fixed-header {
     position: fixed;
     top: 0;
   }
   #masthead.fixed-header-step .topbar, #masthead.fixed-header .topbar {
-    display: none;
-    height: 0;
+    height: auto;
   }
   #masthead.fixed-header-step .header {
     height: 70px;
@@ -11362,6 +11471,12 @@ body {
   #masthead.fixed-header .header {
     height: 50px;
     padding: 0;
+  }
+  #masthead.fixed-header .header-chat::after {
+    animation: chatpointer;
+    animation-direction: normal;
+    animation-duration: 1s;
+    bottom: 0;
   }
 }
 
@@ -12031,12 +12146,12 @@ body {
 }
 
 #table .list_title {
-  color: #949494;
-  font-weight: 500;
+  color: #5b5b5b;
+  font-weight: normal;
   display: inline;
 }
 
-#table .collapse {
+#table .out {
   padding-right: 30px;
 }
 
@@ -12047,11 +12162,8 @@ body {
   margin-right: auto;
 }
 
-#table h2, #table li {
-  margin-bottom: 5px;
-}
-
 #table h2 {
+  margin-bottom: 5px;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -12063,6 +12175,7 @@ body {
 }
 
 #table li {
+  margin-bottom: 5px;
   color: #949494;
   list-style-image: url("../images/info_bullet.png");
   cursor: pointer;
@@ -12082,10 +12195,6 @@ body {
 
 #table .arrow_direction.active::before {
   width: 30px;
-}
-
-#table .collapse {
-  padding-bottom: 15px;
 }
 
 #table #tabledeal {
@@ -12143,7 +12252,7 @@ body {
   display: inline;
 }
 
-#table button {
+#table .btn {
   margin-bottom: 30px;
   margin-top: 15px;
 }
@@ -12249,13 +12358,12 @@ body {
 }
 
 #form {
-  background: #f6f6f6;
+  background-color: #f6f6f6;
   padding-top: 10px;
   padding-bottom: 30px;
-  text-align: left;
 }
 
-#form .form_sect_headings {
+#form .heading {
   color: #0489d9;
   font-weight: 400;
   text-transform: uppercase;

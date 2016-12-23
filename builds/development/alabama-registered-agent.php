@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-md-8 vcenter">
         <h1>Alabama Registered Agent Service</h1>
-        <h1>Only $99/Year!</h1>
+        <h2>Only $99/Year!</h2>
       </div><!-- ** IMPORTANT: keep this comment between two columns to avoid any space **
     --><div class="col-md-4 vcenter">
         <div class="wizard">
@@ -123,207 +123,205 @@
       <div class="col-md-12">
           <h2>Unbeatable multi-year discounts!</h2>
           <!--googleoff: all-->
-          <div class="table-responsive">
               <table class="table table-bordered bg-white lead">
                   <thead>
                       <tr  class="bg-green text-white">
                           <td class="text-center" style="width: 20%;">&nbsp;</td>
-                          <td class="text-center" style="width: 16%;"><span class="f2">1 Year</span></td>
-                          <td class="text-center" style="width: 16%;"><span class="f2">2 Years</span></td>
-                          <td class="text-center" style="width: 16%;"><span class="f2">3 Years</span></td>
-                          <td class="text-center" style="width: 16%;"><span class="f2">4 Years</span></td>
-                          <td class="text-center" style="width: 16%;"><span class="f2">5 Years</span></td>
+                          <td class="text-center" style="width: 16%;"><span class="f2">Cost/year</span></td>
+                          <td class="text-center" style="width: 16%;"><span class="f2">You Save</span></td>
+                          <td class="text-center" style="width: 16%;"><span class="f2">Total Cost</span></td>
+                      </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr>
+                        <td class="text-center">1 Year</td>
+                        <td class="text-center"><em>$99.00</em></td>
+                        <td class="text-center"><em>-</em></td>
+                        <td class="text-center bg-success"><em>$99.00</em></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2 Years</td>
+                        <td class="text-center"><em>$89.10</em></td>
+                        <td class="text-center"><em>$19.80</em></td>
+                        <td class="text-center bg-success"><em>$178.20</em></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">3 Years</td>
+                        <td class="text-center"><em>$80.52</em></td>
+                        <td class="text-center"><em>$55.44</em></td>
+                        <td class="text-center bg-success"><em>$241.56</em></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">4 Years</td>
+                        <td class="text-center"><em>$73.06</em></td>
+                        <td class="text-center"><em>$103.76</em></td>
+                        <td class="text-center bg-success"><em>$292.24</em></td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">5 Years</td>
+                        <td class="text-center"><em>$66.56</em></td>
+                        <td class="text-center"><em>$162.20</em></td>
+                        <td class="text-center bg-success"><em>$332.80</em></td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <p>Our rates are already lowest in the industry. Save even more by ordering multiple years of service in advance, as low as $5.55/month (see chart).</p>
+              <p class="spacer">It is important that you select a reliable company, such as InCorp, <em>The Premier Registered Agent Service</em>™, when choosing your registered agent. InCorp will electronically track the due dates for your filings so you can avoid paying any late
+                  fees to the state! And you will be given a direct line to ONE time-zone assigned service representative handling ALL of your entities in every state in which you maintain business entities. And InCorp can provide you with National Registered Agent
+                  Services in all 50 US states and DC.</p>
+
+              <table class="table table-bordered bg-white">
+                  <thead>
+                      <tr class="bg-green text-white">
+                          <td style="width: 65%;"><span class="f4">Entity Type</span></td>
+                          <td style="width: 35%;"><span class="f4">Registered Agent Change <strong>State Fee</strong></span></td>
                       </tr>
                   </thead>
                   <tbody>
                       <tr>
-                          <td><span class="f3">Cost/year</span></td>
-                          <td class="text-center"><span class="f3"><em>$99.00</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$89.10</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$80.52</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$73.06</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$66.56</em></span></td>
+                          <td>
+                              <p class="bottom0">Domestic Alabama Corporation</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$25</p>
+                          </td>
                       </tr>
                       <tr>
-                          <td><span class="f3">You Save</span></td>
-                          <td class="text-center"><span class="f3"><em>-</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$19.80</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$55.44</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$103.76</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$162.20</em></span></td>
+                          <td>
+                              <p class="bottom0">Domestic Alabama Limited Liability Company</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$25</p>
+                          </td>
                       </tr>
-                      <tr class="success">
-                          <td><span class="f3">Total Cost</span></td>
-                          <td class="text-center"><span class="f3"><em>$99.00</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$178.20</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$241.56</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$292.24</em></span></td>
-                          <td class="text-center"><span class="f3"><em>$332.80</em></span></td>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Domestic Alabama Non-Profit Corporations</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$25</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Domestic &amp; Foreign Partnerships (LP, LLP, LLLP)</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$25</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Foreign Corporations</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$25</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Foreign Non-Profit Corporations</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$25</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Foreign Limited Liability Companies</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$25</p>
+                          </td>
                       </tr>
                   </tbody>
               </table>
-
-                <p>Our rates are already lowest in the industry. Save even more by ordering multiple years of service in advance, as low as $5.55/month (see chart).</p>
-                <p class="spacer">It is important that you select a reliable company, such as InCorp, <em>The Premier Registered Agent Service</em>™, when choosing your registered agent. InCorp will electronically track the due dates for your filings so you can avoid paying any late
-                    fees to the state! And you will be given a direct line to ONE time-zone assigned service representative handling ALL of your entities in every state in which you maintain business entities. And InCorp can provide you with National Registered Agent
-                    Services in all 50 US states and DC.</p>
-
-                <div class="table-responsive">
-                    <table class="table table-bordered bg-white">
-                        <thead>
-                            <tr class="bg-green text-white">
-                                <td style="width: 65%;"><span class="f4">Entity Type</span></td>
-                                <td style="width: 35%;"><span class="f4">Registered Agent Change <strong>State Fee</strong></span></td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Domestic Alabama Corporation</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$25</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Domestic Alabama Limited Liability Company</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$25</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Domestic Alabama Non-Profit Corporations</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$25</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Domestic &amp; Foreign Partnerships (LP, LLP, LLLP)</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$25</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Foreign Corporations</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$25</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Foreign Non-Profit Corporations</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$25</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Foreign Limited Liability Companies</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$25</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div><!-- .table-responsive -->
-                <div class="table-responsive">
-                    <table class="table table-bordered bg-white">
-                        <thead>
-                            <tr class="bg-green text-white">
-                                <td style="width: 65%;"><span class="f4">Entity Type</span></td>
-                                <td style="width: 35%;"><span class="f4">Formation <strong>State Fee</strong></span></td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Domestic Alabama Corporation</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$100</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Domestic Alabama Non-Profit Corporation</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$100</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Foreign Corporation Qualification</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$150</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Foreign Non-Profit Corporation Qualification</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$150</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div><!-- .table-responsive -->
-                <div class="table-responsive">
-                    <table class="table table-bordered bg-white">
-                        <thead>
-                            <tr class="bg-green text-white">
-                                <td style="width: 65%;"><span class="f4">Entity Type</span></td>
-                                <td style="width: 35%;"><span class="f4">Formation <strong>State Fee</strong></span></td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Domestic Alabama Limited Liability Company</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$100</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Domestic Alabama Partnerships</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$100</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Foreign Limited Liability Company Qualification</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$150</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="bottom0">Foreign Partnership Qualification</p>
-                                </td>
-                                <td>
-                                    <p class="bottom0">$150</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div><!-- .table-responsive -->
+              <table class="table table-bordered bg-white">
+                  <thead>
+                      <tr class="bg-green text-white">
+                          <td style="width: 65%;"><span class="f4">Entity Type</span></td>
+                          <td style="width: 35%;"><span class="f4">Formation <strong>State Fee</strong></span></td>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Domestic Alabama Corporation</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$100</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Domestic Alabama Non-Profit Corporation</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$100</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Foreign Corporation Qualification</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$150</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Foreign Non-Profit Corporation Qualification</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$150</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <table class="table table-bordered bg-white">
+                  <thead>
+                      <tr class="bg-green text-white">
+                          <td style="width: 65%;"><span class="f4">Entity Type</span></td>
+                          <td style="width: 35%;"><span class="f4">Formation <strong>State Fee</strong></span></td>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Domestic Alabama Limited Liability Company</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$100</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Domestic Alabama Partnerships</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$100</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Foreign Limited Liability Company Qualification</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$150</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <p class="bottom0">Foreign Partnership Qualification</p>
+                          </td>
+                          <td>
+                              <p class="bottom0">$150</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
               <!--googleon: all-->
               <p style="text-align: center;"><b>InCorp will <a href="/help-center/questions-about-pricing">beat any competitor's price</a> on AL Registered Agent service!</b></p>
 

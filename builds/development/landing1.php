@@ -5,8 +5,8 @@
 <div class="container">
     <div class="row">
       <div class="col-md-8 vcenter">
-        <h2>Incorporation / Corporation Formation</h2>
-        <h2>Services Form a Corporation Online!</h2>
+        <h1>Incorporation / Corporation Formation Services</h1>
+        <h2>Form a Corporation Online!</h2>
       </div><!-- ** IMPORTANT: keep this comment between two columns to avoid any space **
     --><div class="col-md-4 vcenter">
         <div class="wizard">
