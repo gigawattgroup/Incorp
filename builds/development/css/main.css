@@ -11119,6 +11119,15 @@ to remove any whitespace */
   box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
 }
 
+@keyframes chatpointer {
+  from {
+    bottom: -15px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
 /*--------------------------------------------------------------
 # elements
 --------------------------------------------------------------*/
@@ -11185,13 +11194,19 @@ body {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex: 1;
-      flex: 1;
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
 }
 
 #main {
-  -ms-flex: 1;
-      flex: 1;
+  -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+}
+
+@-moz-document url-prefix() {
+  #main, #wrapper {
+    flex: 1;
+  }
 }
 
 #masthead {
@@ -11318,6 +11333,8 @@ body {
   border-color: transparent #55c15d;
   display: block;
   width: 0;
+  transition: all 0.5 ease-out;
+  z-index: -1;
 }
 
 #masthead .header .header-chat:hover {
@@ -11358,13 +11375,15 @@ body {
 }
 
 @media (min-width: 768px) {
+  #masthead .navbar-collapse {
+    padding: 0;
+  }
   #masthead.fixed-header-step, #masthead.fixed-header {
     position: fixed;
     top: 0;
   }
   #masthead.fixed-header-step .topbar, #masthead.fixed-header .topbar {
-    display: none;
-    height: 0;
+    height: auto;
   }
   #masthead.fixed-header-step .header {
     height: 70px;
@@ -11373,6 +11392,12 @@ body {
   #masthead.fixed-header .header {
     height: 50px;
     padding: 0;
+  }
+  #masthead.fixed-header .header-chat::after {
+    animation: chatpointer;
+    animation-direction: normal;
+    animation-duration: 1s;
+    bottom: 0;
   }
 }
 

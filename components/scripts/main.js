@@ -91,9 +91,9 @@
 
   // fix header on scroll
   function fixHeader() {
-    if ($(window).scrollTop() >= 55 && $(window).scrollTop() < 104) {
+    if ($(window).scrollTop() >= 6 && $(window).scrollTop() < 94) {
       header.removeClass("fixed-header").addClass("fixed-header-step");
-    } else if ($(window).scrollTop() >= 105) {
+    } else if ($(window).scrollTop() >= 94) {
       header.removeClass("fixed-header-step").addClass("fixed-header");
     } else {
       header.removeClass("fixed-header-step fixed-header");

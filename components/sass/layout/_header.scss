@@ -18,11 +18,17 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 0 auto;
 }
 
 #main {
-  flex: 1;
+  flex: 1 0 auto;
+}
+
+@-moz-document url-prefix() {
+  #main, #wrapper {
+    flex: 1;
+  }
 }
 
 #masthead {
@@ -147,6 +153,8 @@ body {
           border-color: transparent $color__accent;
           display: block;
           width: 0;
+          transition: all 0.5 ease-out;
+          z-index: -1;
       }
 
       &:hover {
@@ -192,15 +200,19 @@ body {
 
 @include breakpoint($screen-sm) {
 
+    .navbar-collapse {
+      padding: 0;
+    }
+
     &.fixed-header-step, &.fixed-header {
 
       position: fixed;
       top: 0;
 
       .topbar {
-        display: none;
-        height: 0;
+        height: auto;
       }
+
     }
 
     &.fixed-header-step {
@@ -214,6 +226,12 @@ body {
       .header {
         height: 50px;
         padding: 0;
+      }
+      .header-chat::after {
+        animation: chatpointer;
+        animation-direction: normal;
+        animation-duration: 1s;
+        bottom: 0;
       }
     }
 }
