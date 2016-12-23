@@ -11149,6 +11149,85 @@ a {
 /*--------------------------------------------------------------
 # forms
 --------------------------------------------------------------*/
+/* Header Search */
+.search-icon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .search-icon {
+    display: inline-block;
+  }
+}
+
+.search-text {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .search-text {
+    display: none;
+  }
+}
+
+.search-toggle:hover,
+.search-toggle.active {
+  background-color: #efefef;
+  border-radius: 48px;
+}
+
+.search-toggle .screen-reader-text {
+  top: 0;
+  right: 0;
+}
+
+.search-box-wrapper {
+  display: none;
+  background-color: #0489d9;
+  z-index: 2;
+  width: 100%;
+}
+
+.search-box-wrapper:before, .search-box-wrapper:after {
+  content: " ";
+  display: table;
+}
+
+.search-box-wrapper:after {
+  clear: both;
+}
+
+.search-box {
+  padding: 1em;
+  height: 100%;
+  position: relative;
+}
+
+.search-box:before, .search-box:after {
+  content: " ";
+  display: table;
+}
+
+.search-box:after {
+  clear: both;
+}
+
+.search-box .search-field {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  padding: 1rem 2rem 1rem 4rem;
+  background-color: #ffffff;
+  border: 0;
+}
+
+.error404 .search-submit,
+.search .search-submit,
+.search-box .search-submit {
+  display: none;
+}
+
 .btn {
   text-transform: uppercase;
   border-radius: 0;

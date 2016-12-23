@@ -98,10 +98,24 @@
             <li><a href="#about">About</a></li>
             <li><a href="#about">Help Center</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="search-toggle">
+    						<a href="#search-container">
+                  <div class="search-icon"><i class="fa fa-search"></i><span class="sr-only">Search This Website</span></div>
+                  <span class="search-text">Search</span>
+                </a>
+    				</li>
           </ul>
         </div><!-- #menu -->
         </div><!-- .container -->
       </nav>
+
+      <div class="search-box-wrapper">
+        <div class="search-box container">
+          <form method="post">
+            <input type="text" name="search" class="search-field" value="" placeholder="Search...">
+          </form>
+        </div>
+      </div>
 
     </header><!-- #masthead -->
 
