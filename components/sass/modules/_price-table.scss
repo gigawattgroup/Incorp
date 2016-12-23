@@ -1,12 +1,19 @@
-#table {
-  background: $color__gray;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.table {
+
+  .list_title, .out {
+    color: $text-color;
+  }
 
   .list_title{
     color: $text-color;
     font-weight: normal;
     display: inline;
+  }
+
+
+  .tablebg {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .out {
@@ -20,9 +27,11 @@
     margin-right: auto;
   }
 
-
-  h2 {
+  h2.table_left, li {
     margin-bottom: 5px;
+  }
+
+  h2.table_left {
     padding-bottom: 30px;
     text-align: center;
     @include breakpoint($screen-md) {
@@ -49,49 +58,73 @@
     }
   }
 
-  #tabledeal {
+  #tabledeal, .tabledeal-reg {
     background: $color__light;
     border-color: $color__accent;
     border-style: solid;
     border-width: 3px;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 100%;
+    margin-bottom: 10px;
     max-width: 450px;
     overflow: hidden;
+  }
+
+  #tabledeal {
     @include breakpoint($screen-sm) {
-      margin: 0 auto;
+      margin: 15px auto;
       width: auto;
     }
   }
 
-  #blueprice, #blueprice_s {
+  .tabledeal-reg {
+    @include breakpoint($screen-sm) {
+      margin-top: 65px;
+      width: auto;
+    }
+  }
+
+  .blueprice, .blueprice_s, .blueprice_cents {
     color: $color__secondary;
     font-weight: 600;
+  }
+
+  .blueprice, .blueprice_s {
     display: inline-block;
   }
 
-  #blueprice {
+  .blueprice {
       font-size: 80px;
       margin-bottom: -20px;
   }
 
-  #blueprice_s {
+  .blueprice_cents {
+      font-size: 60px;
+      margin-bottom: -30px;
+  }
+
+  .blueprice_s {
     font-size: 16px;
   }
 
   #greenbg {
     background-color: $color__accent;
     color: $color__light;
-    text-align: center;
     width: auto;
     padding-top: 10px;
     padding-bottom: 3px;
     font-weight: 400;
   }
 
-  .price-center {
-    margin: 0 auto;
-    text-align: center;
+  .graybg {
+    background-color: $color__light;
+    width: auto;
+    padding-top: 10px;
+    font-weight: 400;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid $color__secondary;
   }
 
   #price-bullets {
