@@ -1,12 +1,20 @@
-#table {
+.table {
+
+  .list_title, .out {
+    color: $text-color;
+  }
 
   .list_title{
-    color: $footer-color;
-    font-weight: 500;
+    font-weight: normal;
     display: inline;
   }
 
-  .collapse {
+  .tablebg {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .out {
     padding-right: 30px;
   }
 
@@ -47,11 +55,7 @@
     }
   }
 
-  .collapse{
-    padding-bottom: 15px;
-  }
-
-  #tabledeal {
+  #tabledeal, .tabledeal-reg {
     background: $color__light;
     border-color: $color__accent;
     border-style: solid;
@@ -61,32 +65,42 @@
     margin-bottom: 10px;
     max-width: 450px;
     overflow: hidden;
+  }
+
+  #tabledeal {
     @include breakpoint($screen-sm) {
       margin: 15px auto;
       width: auto;
     }
   }
 
-  #blueprice, #blueprice_s, #blueprice_cents {
+  .tabledeal-reg {
+    @include breakpoint($screen-sm) {
+      margin-top: 65px;
+      width: auto;
+    }
+  }
+
+  .blueprice, .blueprice_s, .blueprice_cents {
     color: $color__secondary;
     font-weight: 600;
   }
 
-  #blueprice, #blueprice_s {
+  .blueprice, .blueprice_s {
     display: inline-block;
   }
 
-  #blueprice {
+  .blueprice {
       font-size: 80px;
       margin-bottom: -20px;
   }
 
-  #blueprice_cents {
+  .blueprice_cents {
       font-size: 60px;
       margin-bottom: -30px;
   }
 
-  #blueprice_s {
+  .blueprice_s {
     font-size: 16px;
   }
 
@@ -99,9 +113,15 @@
     font-weight: 400;
   }
 
-  .price-center {
-    margin: 0 auto;
-    text-align: center;
+  .graybg {
+    background-color: $color__light;
+    width: auto;
+    padding-top: 10px;
+    font-weight: 400;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid $color__secondary;
   }
 
   #price-bullets {

@@ -10,7 +10,7 @@
 
   <?php include_once('_breadcrumbs.php'); ?>
 
-  <section id="table">
+  <section class="table">
     <div class="container">
       <div class="row">
 
@@ -25,11 +25,11 @@
           <div id="tabledeal">
             <div id="greenbg" class="text-center"><p>GREAT DEAL!</p></div>
             <div id="tablebg">
-              <div class="price-center">
-                <p id="blueprice">$99</p>
-                <p id="blueprice_s">Per Year</p>
+              <div class="text-center">
+                <p class="blueprice">$99</p>
+                <p class="blueprice_s">Per Year</p>
                 <img src="images/bluedivider.png" alt="divider">
-              </div> <!-- #price-center -->
+              </div> <!-- #text-center -->
               <div id="price-bullets">
                 <ul>
                   <!-- Registered Agents -->
@@ -170,7 +170,7 @@
                 </ul>
               </div> <!-- #price-center -->
               <div class="price-center">
-                <button class="btn btn-lg btn-info">Get Started</button>
+                <button class="btn btn-lg btn-info center-block">Get Started</button>
               </div>
               </div>
             </div><!-- #tablebg -->
