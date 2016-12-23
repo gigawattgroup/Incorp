@@ -100,7 +100,12 @@
           <button type="button" class="btn btn-primary btn-sm">Limited Partnership</button>
           <button type="button" class="btn btn-primary btn-sm">Sole Proprietor</button>
         </div></div>
-        <div class="row"><div class="col-md-12"><h3 class="text-center">Limited Liability Company</h3></div></div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-center">Limited Liability Company</h3>
+            <img src="images/limitedliability_icon.png" alt="monument icon" class="center-block">
+          </div>
+        </div>
         <div class="row"><div class="col-md-12"><hr></div></div>
         <div class="row">
           <div class="col-md-6">
