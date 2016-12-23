@@ -11178,6 +11178,17 @@ body {
   }
 }
 
+#wrapper {
+  min-height: 100%;
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex: 1;
+      flex: 1;
+}
+
 #main {
   -ms-flex: 1;
       flex: 1;
@@ -12249,13 +12260,12 @@ body {
 }
 
 #form {
-  background: #f6f6f6;
+  background-color: #f6f6f6;
   padding-top: 10px;
   padding-bottom: 30px;
-  text-align: left;
 }
 
-#form .form_sect_headings {
+#form .heading {
   color: #0489d9;
   font-weight: 400;
   text-transform: uppercase;

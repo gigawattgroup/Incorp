@@ -94,7 +94,7 @@
   </div><!-- .disclaimer -->
 
 </footer><!-- #colophon -->
-
+</div><!-- #wrapper -->
 <!-- Incorp JavaScript
 ================================================== -->
 <script src="js/main.js"></script>

@@ -67,8 +67,12 @@ y),b(document.body).on("sticky_kit:recalc",y),a.on("sticky_kit:detach",H),setTim
   expert_btn1 = $(".header .btn-expert"),
   expert_btn2 = $("#intro .btn-expert"),
   breakpointSM = 769,
+  breakpointMD = 992,
   breakpointHeader = 613,
-  minWidth =  '(min-width: '+breakpointSM+'px)';
+  minWidth =  '(min-width: '+breakpointSM+'px)',
+  minWidthMD = '(min-width: '+breakpointMD+'px)',
+  isIntro = $("#intro").length,
+  stickyElem = $(".stick-to-header");
 
   // dropdown on hover
   toggleMenuHover(minWidth);
@@ -77,7 +81,7 @@ y),b(document.body).on("sticky_kit:recalc",y),a.on("sticky_kit:detach",H),setTim
 
   // on page load remove "talk to an expert" button on the homepage
   function hideExpertBTN(size) {
-    if($("#intro").length) {
+    if(isIntro) {
       if (window.matchMedia(size).matches && $("#masthead.fixed-header").length == 0) {
         expert_btn1.addClass('invisible');
       } else {
@@ -120,6 +124,7 @@ y),b(document.body).on("sticky_kit:recalc",y),a.on("sticky_kit:detach",H),setTim
 
     hideExpertBTN(minWidth);
 
+
   });
 
 
@@ -134,6 +139,7 @@ y),b(document.body).on("sticky_kit:recalc",y),a.on("sticky_kit:detach",H),setTim
 
     // toggle "talk to an expert" button
     ToggleExpertBTN(minWidth);
+
   });
 
 
@@ -156,7 +162,7 @@ y),b(document.body).on("sticky_kit:recalc",y),a.on("sticky_kit:detach",H),setTim
 
   //toggle homepage "talk to an expert" button
   function ToggleExpertBTN(size) {
-    if($("#intro").length) {
+    if(isIntro) {
       var first = expert_btn2.offset().top + expert_btn2.outerHeight();
       var second = nav.offset().top + nav.outerHeight();
       var distance = parseInt(second) - parseInt(first);
@@ -191,11 +197,18 @@ y),b(document.body).on("sticky_kit:recalc",y),a.on("sticky_kit:detach",H),setTim
   }
 
   // fix price table on scroll
-  function FixToTop(elem) {
-    var h = $("#masthead").height();
-    console.log("h: "+h);
-    elem.stick_in_parent({offset_top: h});
+  function stickToHeader(el, offset) {
+    // check if element exists and window is large enough
+    if(window.matchMedia(minWidthMD).matches){
+      if(el.length) {
+        el.stick_in_parent({offset_top: offset});
+      }
+    }
   }
+
+
+  stickToHeader(stickyElem, 111);
+
 
 
 
