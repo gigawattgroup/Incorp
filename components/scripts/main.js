@@ -159,7 +159,6 @@
     }
   }
 
-
   stickToHeader(stickyElem, 134);
 
 

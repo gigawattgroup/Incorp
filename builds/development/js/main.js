@@ -207,7 +207,6 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
     }
   }
 
-
   stickToHeader(stickyElem, 134);
 
 
