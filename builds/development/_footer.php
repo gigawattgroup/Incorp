@@ -97,7 +97,7 @@
 </div><!-- #wrapper -->
 <!-- Incorp JavaScript
 ================================================== -->
-<script src="js/main.js?v=1.0.1"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

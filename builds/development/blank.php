@@ -15,34 +15,29 @@
 
         <p>
 
-            <code>
-              <pre>
-                &lt;!-- Header Template --&gt;
+<code>
+  <pre class="bg-white">
 
-                &lt;section id="content"&gt;
-                  &lt;div class="container"&gt;
-                    &lt;div class="row"&gt;
-                      &lt;div class="col-md-12"&gt;
+    &lt;!-- Header Template --&gt;
 
-                        &lt;h2&gt;H2 Headline&lt;/h2&gt;
-                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+    &lt;section id="content"&gt;
+      &lt;div class="container"&gt;
+        &lt;div class="row"&gt;
+          &lt;div class="col-md-12"&gt;
 
-                      &lt;/div&gt;&lt;!-- .col --&gt;
-                    &lt;/div&gt;&lt;!-- .row --&gt;
-                  &lt;/div&gt;&lt;!-- .container --&gt;
-                &lt;/section&gt;&lt;!-- #content --&gt;
+            &lt;h2&gt;H2 Headline&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
 
-                &lt;!-- Footer Template --&gt;
-              </pre>
-            </code>
+          &lt;/div&gt;&lt;!-- .col --&gt;
+        &lt;/div&gt;&lt;!-- .row --&gt;
+      &lt;/div&gt;&lt;!-- .container --&gt;
+    &lt;/section&gt;&lt;!-- #content --&gt;
+
+    &lt;!-- Footer Template --&gt;
+  </pre>
+</code>
 
 
         </p>
-
-
-      </div><!-- .col -->
-    </div><!-- .row -->
-  </div><!-- .container -->
-</section><!-- #content -->
 
 <?php include_once '_footer.php'; ?>

@@ -22,13 +22,3 @@
     min-width: 150px;
   }
 } // #pricedescript
-
-#quotewidth {
-  padding-left: 80px;
-  padding-right: 80px;
-  text-align: center;
-  padding-bottom: 25px;
-  @include breakpoint($screen-md) {
-    text-align: right;
-  }
-}

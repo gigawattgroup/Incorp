@@ -1,3 +1,93 @@
+.title-banner {
+    float: left;
+    width: 100%;
+    position: relative;
+    background-color: $color__secondary;
+    color: $color__light;
+    padding: 20px 0;
+    text-align: center;
+}
+
 .unbeatable-discounts {
   width: 90%;
+}
+
+
+// Compare Wizard Styles
+
+.compare-wizard-header {
+    @include make-md-column(12);
+    text-align: center;
+    border-bottom: 1px solid $hr-border;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    .fa {
+      font-size: 24px;
+    }
+}
+
+.compare-wizard-links {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline;
+    list-style-type: none;
+    a {
+      @extend .btn;
+      @extend .btn-primary;
+      @extend .btn-sm;
+
+      margin-bottom: 5px;
+      text-transform: capitalize !important;
+      font-weight: normal !important;
+
+      &.active {
+        background-color: $color__secondary !important;
+        border-color: darken($color__secondary, 20%) !important;
+        box-shadow: none;
+      }
+    } // a
+  } // li
+
+} // .compare-wizard-links
+
+.compare-wizard-body {
+  display: none;
+  opacity: 0;
+  transition: all 1s ease-in;
+
+  &.active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+
+.legal-kit {
+  background-color: $color__light;
+  @include make-row();
+  padding: 0;
+  margin: 0 0 15px;
+
+  .legal-kit-img {
+    @include make-sm-column(3);
+    padding-left: 0;
+    img {
+      width: 100%;
+      max-width: 270px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+
+  }
+
+  .legal-kit-body {
+    @include make-sm-column(9);
+    padding-bottom: 20px;
+
+  }
+
 }

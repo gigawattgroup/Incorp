@@ -1,4 +1,4 @@
-#form {
+#form-wizard {
   background-color: $color__gray;
   padding-top: 10px;
   padding-bottom: 30px;
@@ -20,60 +20,69 @@
     display: inline;
   }
 
-  #order_summary_box {
-    position: absolute;
-    height: auto;
+  .order-summary-box {
     max-width: 400px;
-    border: 1.5px solid #ccc;
+    border: 1.5px solid $hr-border;
     background-color: $color__light;
     padding: 30px;
+    margin: 0 auto;
 
-    #order_title, #order_total {
-      text-align: left;
+    .order-title {
       text-transform: uppercase;
-      border-right: none;
-      border-left: none;
+      line-height: 1;
     }
 
-    #order_title {
-      border-top: none;
-      border-bottom: thin solid #ccc;
-      padding-bottom: 5px;
-    }
-
-    #order_total, #order_total_amount {
+    .order-total {
       font-weight: 600;
       letter-spacing: 1px;
       font-size: 15px;
-    }
-
-    #order_total_amount {
       float: right;
+      clear: both;
     }
 
-    #services_selected, #services_quantity {
-      list-style: none;
-      padding-left:0;
-      display: inline;
+    .btn-order {
+      margin-top: 40px;
+      @extend .btn-block;
+      @extend .btn-success;
     }
 
-    .order_list_titles {
-      font-weight: 400;
-      display: inline;
-    }
-
-    #services_selected {
-      float: left;
-    }
-
-    #services_quantity {
-      float: right;
-      text-align: right;
-    }
-
-    #order_summary_button {
+    .services-summary {
+      margin: 10px 0;
+      padding: 15px 0;
       width: 100%;
-    }
-  }
+      border-top: 1px solid $hr-border;
+      border-bottom: 1px solid $hr-border;
+      list-style: none;
 
-}
+      li {
+        padding: 0;
+        margin: 0;
+        display: block;
+        width: 100%;
+      }
+    } // .services-summary
+
+    .service-title, .service-title-header {
+      display: inline-block;
+      text-align: left;
+      width: 69%;
+    }
+
+    .service-price, .service-price-header {
+      display: inline-block;
+      text-align: right;
+      width: 29%;
+    }
+
+    .service-title-header, .service-price-header {
+      font-weight: 400;
+    }
+
+    #coupon-field {
+      margin-top: 15px;
+    }
+
+
+  } // .order-summary-box
+
+} // #form-wizard

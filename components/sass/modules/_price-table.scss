@@ -1,3 +1,4 @@
+/*
 .table {
 
   .list_title, .out {
@@ -70,7 +71,9 @@
     overflow: hidden;
   }
 
+
   #tabledeal {
+    @include shadow-8dp();
     @include breakpoint($screen-sm) {
       margin: 15px auto;
       width: auto;
@@ -78,34 +81,36 @@
   }
 
   .tabledeal-reg {
+    border-color: $color__secondary;
     @include breakpoint($screen-sm) {
       margin-top: 65px;
       width: auto;
     }
   }
 
-  .blueprice, .blueprice_s, .blueprice_cents {
-    color: $color__secondary;
-    font-weight: 600;
-  }
-
-  .blueprice, .blueprice_s {
+  .price-lg {
     display: inline-block;
+    color: $color__secondary;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: -30px;
   }
 
-  .blueprice {
+  .price-xlg{
+      @extend .price-lg;
       font-size: 80px;
       margin-bottom: -20px;
   }
 
-  .blueprice_cents {
-      font-size: 60px;
-      margin-bottom: -30px;
+  .price-sub {
+    display: inline-block;
+    color: $color__secondary;
+    font-size: 16px;
+    font-weight: 600;
   }
 
-  .blueprice_s {
-    font-size: 16px;
-  }
+
+
 
   #greenbg {
     background-color: $color__accent;
@@ -140,3 +145,171 @@
   }
 
 } // #table
+*/
+
+.quotewidth {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  padding-bottom: 25px;
+  @include breakpoint($screen-md) {
+    text-align: right;
+  }
+}
+
+
+.table-deal {
+  background: $color__light;
+  border-color: $color__secondary;
+  border-style: solid;
+  border-width: 3px;
+  margin: 10px auto 10px;
+  width: 100%;
+  max-width: 450px;
+  overflow: hidden;
+
+  @include breakpoint($screen-sm) {
+    margin-top: 65px;
+    width: auto;
+  }
+
+  img {
+    margin-bottom: 15px;
+  }
+
+  .table-body {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .table-header {
+    background-color: $color__secondary;
+    color: $color__light;
+    width: 100%;
+    line-height: 1;
+    padding: 20px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &.special {
+    border-color: $color__accent;
+    @include shadow-8dp();
+    @include breakpoint($screen-sm) {
+      margin: 10px auto 0;
+      width: auto;
+    }
+
+    .table-header {
+      background-color: $color__accent;
+    }
+
+
+  } // .special
+
+  .price-cat {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 2;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color__secondary;
+  }
+
+  .price-lg {
+    display: inline-block;
+    color: $color__secondary;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: -30px;
+  }
+
+  .price-xlg{
+      @extend .price-lg;
+      font-size: 80px;
+      margin-bottom: -20px;
+  }
+
+  .price-sub {
+    display: inline-block;
+    color: $color__secondary;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .table-price {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    &.block {
+      margin-bottom: 20px;
+      & > div {
+        display: block;
+      }
+    }
+  }
+
+
+  .table-divider {
+    width: 289px;
+    height: 3px;
+    display: block;
+    margin: 0 auto 20px;
+    background-image: url('../images/bluedivider.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .table-list {
+    list-style-position: inside;
+    width: 100%;
+    padding: 0 20px 0 50px;
+    margin: 0 auto;
+
+    @include breakpoint($screen-md) {
+      padding: 0 2px 0 10px;
+    }
+
+    @include breakpoint($screen-lg) {
+      padding: 0 10px 0 30px;
+    }
+
+    li {
+      margin-bottom: 5px;
+      color: $footer-color;
+      list-style-image: url('../images/info_bullet.png');
+      cursor: pointer;
+
+      .list-title {
+        color: $text-color;
+        font-weight: normal;
+        display: inline;
+      }
+    }
+  }
+
+  .arrow-direction {
+    color: $color__accent;
+    display: inline;
+    padding-left: 5px;
+    font-size: 10px;
+    @include icon('chevron-right');
+    transition: all 0.3s ease-out;
+    &.active {
+      @include icon('chevron-down');
+    }
+  }
+
+  .btn {
+    margin: 20px auto 30px;
+  }
+
+
+} // .table-deal
