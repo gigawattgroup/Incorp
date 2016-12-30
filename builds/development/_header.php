@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Incorp - Registered Agent Service - National Registered Agents</title>
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -37,7 +37,7 @@
       <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-toggle-container">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="menu">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -48,54 +48,14 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li class="dropdown dropdown-large">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-              <ul class="dropdown-menu dropdown-menu-large row">
-                <li class="col-sm-3">
-      						<ul>
-      							<li class="dropdown-header">Main Services</li>
-      							<li><a href="#">Registered Agent Services</a></li>
-      							<li><a href="#">Incorporation / Formation Services</a></li>
-      							<li><a href="#">Certificate of Good Standing</a></li>
-      							<li><a href="#">Foreign Qualifications</a></li>
-      							<li><a href="#">Dissolution/Withdrawal/Cancellation</a></li>
-      						</ul>
-      					</li>
-      					<li class="col-sm-3">
-      						<ul>
-      							<li class="dropdown-header">Business Services</li>
-      							<li><a href="#">Business Licenses</a></li>
-      							<li><a href="#">Corporate Record Kits &amp; Seals</a></li>
-      							<li><a href="#">DBA (Doing Business As)</a></li>
-      							<li><a href="#">EIN ( Federal Tax ID Number)</a></li>
-      							<li><a href="#">Managed Report Services</a></li>
-      							<li><a href="#">Books &amp; Publications</a></li>
-      						</ul>
-      					</li>
-      					<li class="col-sm-3">
-      						<ul>
-      							<li class="dropdown-header">Protecting Your Business</li>
-      							<li><a href="#">Entitywatch</a></li>
-      							<li><a href="#">Business Identity Theft Protection</a></li>
-      							<li><a href="#">Trademarks</a></li>
-      							<li><a href="#">Copyrights</a></li>
-      						</ul>
-      					</li>
-      					<li class="col-sm-3">
-      						<ul>
-      							<li class="dropdown-header">Amendments</li>
-      							<li><a href="#">Name Amendment Filing Services</a></li>
-      							<li><a href="#">Article Amendment Filing Services</a></li>
-      							<li><a href="#">Share Amendment Filing Services</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Document Certify &amp; Copies</li>
-                    <li><a href="#">Apostille Service (Non US)</a></li>
-                    <li><a href="#">Certified Copies (US)</a></li>
-      						</ul>
-      					</li>
-              </ul><!-- .dropdown-menu -->
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Corporation Services</a>
+              <?php include('_dropdown_corporation.php'); ?>
             </li>
-            <li><a href="#about">Information</a></li>
-            <li><a href="#about">About</a></li>
+            <li class="dropdown dropdown-large">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Business Services</a>
+              <?php include('_dropdown_business.php'); ?>
+            </li>
+            <li><a href="#about">About Incorp</a></li>
             <li><a href="#about">Help Center</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="search-toggle">

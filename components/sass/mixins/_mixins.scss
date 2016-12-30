@@ -6,6 +6,14 @@
   @extend .fa-#{$icon};
 }
 
+@mixin icon-after($icon) {
+  &::after {
+    @extend .fa;
+    width: 30px
+  }
+  @extend .fa-#{$icon};
+}
+
 /* Shadows */
 
 // Focus shadow mixin.

@@ -4,6 +4,7 @@
   var header = $("#masthead"),
   brand = $(".navbar-brand"),
   nav = $(".navbar"),
+  dropdown = $('.nav .dropdown'),
   expert_btn1 = $(".header .btn-expert"),
   expert_btn2 = $("#intro .btn-expert"),
   breakpointSM = 769,
@@ -13,10 +14,9 @@
   minWidthMD = '(min-width: '+breakpointMD+'px)',
   isIntro = $("#intro").length,
   stickyElem = $(".stick-to-header"),
-  searchBtn = $(".search-toggle");
+  searchBtn = $(".search-toggle"),
+  compareLink = $(".compare-wizard-links a");
 
-  // dropdown on hover
-  toggleMenuHover(minWidth);
 
   hideExpertBTN(minWidth);
 
@@ -74,9 +74,6 @@
     $('#options .desc').setAllToMaxHeight();
     $('.equal-height').setAllToMaxHeight();
 
-    // dropdown on hover
-    toggleMenuHover(minWidth);
-
     hideExpertBTN(minWidth);
 
 
@@ -99,19 +96,21 @@
 
 
   // rotate chevron for table
-  $("#price-bullets li").on('click touchstart', function(e) {
-    $(this).find(".arrow_direction").toggleClass("active");
+  $(".table-list li").on('click touchstart', function(e) {
+    $(this).find(".arrow-direction").toggleClass("active");
   });
 
 
   // fix header on scroll
   function fixHeader() {
-    if ($(window).scrollTop() >= 6 && $(window).scrollTop() < 94) {
-      header.removeClass("fixed-header").addClass("fixed-header-step");
+    if ($(window).scrollTop() >= 7 && $(window).scrollTop() < 33) {
+      header.removeClass("fixed-header fixed-header-step-2").addClass("fixed-header-step");
+    } else if ($(window).scrollTop() >= 33 && $(window).scrollTop() < 94) {
+      header.removeClass("fixed-header fixed-header-step").addClass("fixed-header-step-2");
     } else if ($(window).scrollTop() >= 94) {
-      header.removeClass("fixed-header-step").addClass("fixed-header");
+      header.removeClass("fixed-header-step fixed-header-step-2").addClass("fixed-header");
     } else {
-      header.removeClass("fixed-header-step fixed-header");
+      header.removeClass("fixed-header-step fixed-header-step-2 fixed-header");
     }
   }
 
@@ -133,24 +132,6 @@
 
   }
 
-  // dropdown on hover
-  function toggleMenuHover(size) {
-
-    $('ul.nav li.dropdown').on("hover", function(e) {
-      console.log("hover detected");
-        if (e.type == "mouseenter") {
-          if (window.matchMedia(size).matches) {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(300);
-          }
-        } else {
-          if (window.matchMedia(size).matches) {
-            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(300);
-          }
-        }
-    });
-
-  }
-
   // fix price table on scroll
   function stickToHeader(el, offset) {
     // check if element exists and window is large enough
@@ -162,6 +143,29 @@
   }
 
   stickToHeader(stickyElem, 134);
+
+
+  // equal heights for big dropdowns
+  $('.dropdown').on('show.bs.dropdown mouseenter', function(e){
+    $(".col-color").setAllToMaxHeight();
+  });
+
+  // compare-wizard functionality
+  compareLink.on('click touchstart', function(){
+    var title = $(this).text(),
+        icon = $(this).attr('data-icon'),
+        link = $(this).attr('href');
+
+    compareLink.removeClass("active");
+    $(this).toggleClass('active');
+    $('.compare-wizard-title').text(title);
+    $('.compare-wizard-header .fa').removeAttr('class').addClass('fa '+icon);
+    $('.compare-wizard-body').removeClass('active');
+    $(link).addClass('active');
+
+    return false;
+  });
+
 
 
 })(jQuery);

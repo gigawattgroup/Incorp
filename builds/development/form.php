@@ -1,16 +1,16 @@
 <?php include_once('_header.php'); ?>
 
-  <div id="pricedescript">
-    <div class="container">
-          <div class="col-md-12">
-            <h1>Select a Package</h1>
-          </div>
-    </div><!-- .container -->
-  </div><!-- .pricedescript -->
+<div class="title-banner">
+  <div class="container">
+        <div class="col-md-12">
+          <h1>Select a Package</h1>
+        </div>
+  </div><!-- .container -->
+</div><!-- .title-banner -->
 
   <?php include_once('_breadcrumbs.php'); ?>
 
-  <section id="form">
+  <section id="form-wizard">
     <div class="container">
       <form method="post">
       <div class="row">
@@ -206,21 +206,40 @@
 
         <div class="col-md-5 stick-to-header">
 
-            <div id="order_summary_box"><p id="order_title">Your Order</p>
-              <ul id="services_selected">
-                <li><p class="order_list_titles">Item</p></li>
-                <li>Registered Agent Services</li>
-                <li>LLC</li>
+            <div class="order-summary-box">
+              <div class="order-title">Your Order</div>
+              <ul class="services-summary">
+                <li>
+                  <span class="service-title-header">Item</span>
+                  <span class="service-price-header">Subtotal</span>
                 </li>
+                <!-- START: loop through selected services -->
+                <li>
+                  <span class="service-title">Registered Agent Services</span>
+                  <span class="service-price">$99.00</span>
+                </li>
+                <li>
+                  <span class="service-title">LLC</span>
+                  <span class="service-price">$99.00</span>
+                </li>
+                <!-- END: loop through selected services -->
+
               </ul>
-              <ul id="services_quantity">
-                <li><p class="order_list_titles">Subtotal</p></li>
-                <li>$99.00</li>
-                <li>$99.00</li>
-              </ul><br><br><br><hr>
-              <!--<p id="order_total"></p>-->
-              <div id="order_total_amount">Total: $198.00</div><br><br>
-              <button type="submit" class="btn btn-lg btn-success" id="order_summary_button">Order Now</button>
+
+              <a role="button" data-toggle="collapse" href="#coupon-field" aria-expanded="false" aria-controls="coupon-field">
+                Have a coupon code?
+              </a>
+              <div class="order-total">Total: $198.00</div>
+              <div class="clearfix"></div>
+              <div class="collapse" id="coupon-field">
+                <div class="input-group">
+                  <input class="form-control" aria-label="Enter Coupon Code" placeholder="Coupon Code">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">Apply</button>
+                  </div>
+                </div><!-- .input-group -->
+              </div>
+              <button type="submit" class="btn btn-order">Order Now</button>
             </div>
 
         </div><!-- .col-md-4 -->
