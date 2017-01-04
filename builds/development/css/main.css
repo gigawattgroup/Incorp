@@ -12068,6 +12068,23 @@ body {
   }
 }
 
+#intro.vidbg {
+  background-color: transparent;
+  background-image: none;
+}
+
+#intro #intro-vid, #intro .canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  overflow: hidden;
+}
+
 #options {
   background: #026cb6;
   width: 100%;
