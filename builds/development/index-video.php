@@ -4,7 +4,6 @@
       <video muted id="intro-vid" autoplay loop>
 					<source src="images/intro.mp4" type="video/mp4">
 			</video>
-			<!--<canvas class="canvas"></canvas>-->
       <div class="container">
         <h2>Registered agent service, entity formations, and corporate compliance.</h2>
         <button type="button" class="btn btn-lg btn-info btn-expert" data-toggle="modal" data-target="#expert-contact-form">Talk to an Expert</button>

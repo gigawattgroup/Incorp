@@ -65,8 +65,10 @@
   }
 
   &.vidbg {
-    background-color: transparent;
-    background-image: none;
+    @include breakpoint($screen-sm) {
+      background-color: transparent;
+      background-image: none;
+    }
   }
 
   #intro-vid, .canvas {
