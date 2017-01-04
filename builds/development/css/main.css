@@ -11116,6 +11116,16 @@ to remove any whitespace */
   float: none;
 }
 
+img.pull-left {
+  margin-right: 1em;
+  margin-bottom: 0;
+}
+
+img.pull-right {
+  margin-left: 1em;
+  margin-bottom: 0;
+}
+
 .vertical-center, #masthead .topbar {
   height: 100%;
   width: 100%;

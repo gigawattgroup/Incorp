@@ -40,4 +40,9 @@
 
         </p>
 
+      </div> <!-- .col -->
+    </div> <!-- .row -->
+  </div> <!-- .container -->
+</section>
+
 <?php include_once '_footer.php'; ?>
