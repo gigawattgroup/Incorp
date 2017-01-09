@@ -6,12 +6,13 @@
   color: $intro-color;
   background-image: url('../images/intro.png');
   background-repeat: no-repeat;
-  background-position: center 150%;
-  background-size: auto 100%;
+  background-position: center;
+  background-size: cover;
   text-align: center;
 
   @include breakpoint($screen-sm) {
     background-position: right;
+    padding-bottom: 70px;
   }
 
   @include breakpoint($screen-md) {
@@ -57,10 +58,15 @@
   }
 
   .btn {
-    border: 1px solid $color__light;
+    border: 2px solid $color__light;
+    background-color: transparent;
     display: none;
     @include breakpoint($screen-sm) {
       display: inline-block;
+    }
+
+    &:hover {
+      background-color: $color__secondary;
     }
   }
 

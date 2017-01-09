@@ -163,12 +163,22 @@
           <p>Rounded button</p>
           <p><button type="button" class="btn btn-success btn-rounded">Live Chat</button></p>
 
-          <hr>
+          <p>Square button</p>
+          <p><button type="button" class="btn btn-info btn-sqr">click me</button></p>
+          <p>&nbsp;</p>
         </div>
 
         </div><!-- .row -->
       </div><!-- .container -->
     </section><!-- #paragraphs -->
+
+    <section id="quotes">
+      <div class="container">
+          <h2>Price Quote</h2>
+          <p class="lead">INCORP will beat any competitor’s price on on any product or service guaranteed!</p>
+          <button class="btn btn-lg btn-info">Get Price Quote</button>
+      </div><!-- .container -->
+    </section><!-- .quotes -->
 
     <section class="table">
       <div class="container">
