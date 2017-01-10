@@ -2,7 +2,8 @@
 #intro {
   position: relative;
   width: 100%;
-  background-color: $intro-bg;
+  //background-color: $intro-bg;
+  background-color: darken($color__gray-light, 30%);
   color: $intro-color;
   background-image: url('../images/intro.png');
   background-repeat: no-repeat;
@@ -38,11 +39,11 @@
     top: 0;
     left: 0;
     z-index: 1;
-    background: rgba($intro-bg, 0.3);
-    @include breakpoint($screen-md) {
+    background: rgba(0, 79, 148, 0.3);
+    /*@include breakpoint($screen-md) {
       width: 66%;
       background: linear-gradient(to right, rgba($intro-bg, 1), rgba($intro-bg, 0));
-    }
+    }*/
   }
 
   h1, h2 {

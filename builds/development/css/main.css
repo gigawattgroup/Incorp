@@ -12015,7 +12015,7 @@ body {
 #intro {
   position: relative;
   width: 100%;
-  background-color: #00192e;
+  background-color: #a3a3a3;
   color: #ffffff;
   background-image: url("../images/intro.png");
   background-repeat: no-repeat;
@@ -12057,14 +12057,11 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  background: rgba(0, 25, 46, 0.3);
-}
-
-@media (min-width: 992px) {
-  #intro .gradient {
-    width: 66%;
-    background: linear-gradient(to right, #00192e, rgba(0, 25, 46, 0));
-  }
+  background: rgba(0, 79, 148, 0.3);
+  /*@include breakpoint($screen-md) {
+      width: 66%;
+      background: linear-gradient(to right, rgba($intro-bg, 1), rgba($intro-bg, 0));
+    }*/
 }
 
 #intro h1, #intro h2 {
@@ -12228,6 +12225,10 @@ body {
     margin-top: -75px;
     z-index: 99;
   }
+}
+
+#options .container .option1:hover, #options .container .option2:hover {
+  background-color: #2d2d2d;
 }
 
 #options .container .option1 {
@@ -12508,6 +12509,13 @@ body {
 #testimonials h2 {
   text-align: center;
   padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  #testimonials h2 {
+    margin-bottom: 0;
+  }
 }
 
 #testimonials blockquote {
@@ -12522,8 +12530,6 @@ body {
   color: #ffffff;
   border: none;
   border-radius: 25px;
-  margin-top: 57px;
-  margin-left: 57px;
   /*&::after {
         content: "";
         position: absolute;
@@ -12538,6 +12544,13 @@ body {
     }*/
 }
 
+@media (min-width: 992px) {
+  #testimonials blockquote {
+    margin-top: 57px;
+    margin-left: 57px;
+  }
+}
+
 #testimonials blockquote footer {
   color: inherit;
 }
@@ -12547,21 +12560,27 @@ body {
 }
 
 #testimonials blockquote::before {
-  content: "“";
-  color: #000000;
-  position: absolute;
-  top: -57px;
-  left: -57px;
-  width: 115px;
-  height: 115px;
-  background-color: #ffffff;
-  border: 5px solid #55c15d;
-  border-radius: 50%;
-  display: block;
-  font-size: 140px;
-  line-height: 1.2;
-  font-family: arial;
-  font-weight: 700;
+  content: "";
+}
+
+@media (min-width: 992px) {
+  #testimonials blockquote::before {
+    content: "“";
+    color: #000000;
+    position: absolute;
+    top: -57px;
+    left: -57px;
+    width: 115px;
+    height: 115px;
+    background-color: #ffffff;
+    border: 5px solid #55c15d;
+    border-radius: 50%;
+    display: block;
+    font-size: 140px;
+    line-height: 1.2;
+    font-family: arial;
+    font-weight: 700;
+  }
 }
 
 #testimonials .owl-dots .owl-dot span {

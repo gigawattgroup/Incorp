@@ -8,6 +8,10 @@
   h2 {
     text-align: center;
     padding-bottom: 20px;
+    margin-bottom: 30px;
+    @include breakpoint($screen-md) {
+      margin-bottom: 0;
+    }
   }
   text-align: center;
 
@@ -26,8 +30,10 @@
     color: $color__light;
     border: none;
     border-radius: 25px;
-    margin-top: 57px;
-    margin-left: 57px;
+    @include breakpoint($screen-md) {
+      margin-top: 57px;
+      margin-left: 57px;
+    }
 
     footer {
       color: inherit;
@@ -37,21 +43,24 @@
     }
 
     &::before {
-      content: "“";
-      color: $color__dark;
-      position: absolute;
-      top: -57px;
-      left: -57px;
-      width: 115px;
-      height: 115px;
-      background-color: $color__light;
-      border: 5px solid $color__accent;
-      border-radius: 50%;
-      display: block;
-      font-size: 140px;
-      line-height: 1.2;
-      font-family: arial;
-      font-weight: 700;
+      content: "";
+      @include breakpoint($screen-md) {
+        content: "“";
+        color: $color__dark;
+        position: absolute;
+        top: -57px;
+        left: -57px;
+        width: 115px;
+        height: 115px;
+        background-color: $color__light;
+        border: 5px solid $color__accent;
+        border-radius: 50%;
+        display: block;
+        font-size: 140px;
+        line-height: 1.2;
+        font-family: arial;
+        font-weight: 700;
+      }
 
     }
 
