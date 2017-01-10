@@ -11868,8 +11868,14 @@ body {
 
 .col-color:nth-child(even) {
   background-color: #f5f5f5;
-  padding: 20px 0;
-  margin: -20px 0;
+  padding: 20px 15px;
+}
+
+@media (min-width: 768px) {
+  .col-color:nth-child(even) {
+    padding: 20px 0;
+    margin: -20px 0;
+  }
 }
 
 #colophon {

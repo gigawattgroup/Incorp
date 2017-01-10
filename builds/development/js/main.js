@@ -216,7 +216,9 @@ y),b(document.body).on("sticky_kit:recalc",y),a.on("sticky_kit:detach",H),setTim
 
   // equal heights for big dropdowns
   $('.dropdown').on('show.bs.dropdown mouseenter', function(e){
-    $(".col-color").setAllToMaxHeight();
+    if (window.matchMedia(minWidth).matches) {
+      $(".col-color").setAllToMaxHeight();
+    }
   });
 
   // compare-wizard functionality

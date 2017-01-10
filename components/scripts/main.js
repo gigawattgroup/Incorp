@@ -156,7 +156,9 @@
 
   // equal heights for big dropdowns
   $('.dropdown').on('show.bs.dropdown mouseenter', function(e){
-    $(".col-color").setAllToMaxHeight();
+    if (window.matchMedia(minWidth).matches) {
+      $(".col-color").setAllToMaxHeight();
+    }
   });
 
   // compare-wizard functionality

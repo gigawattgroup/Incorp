@@ -252,6 +252,9 @@
 
 .col-color:nth-child(even) {
   background-color: #f5f5f5;
-  padding: 20px 0;
-  margin: -20px 0;
+  padding: 20px 15px;
+  @include breakpoint($screen-sm) {
+    padding: 20px 0;
+    margin: -20px 0;
+  }
 }
