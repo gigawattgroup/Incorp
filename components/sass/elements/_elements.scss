@@ -9,6 +9,14 @@ a {
   font-weight: normal;
 }
 
+.hlead {
+  border-bottom: 5px solid $color__accent;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  @include clearfix();
+}
+
 .lead {
   font-size: 18px;
   font-weight: normal;

@@ -98,6 +98,11 @@
 <!-- Incorp JavaScript
 ================================================== -->
 <script src="js/main.js"></script>
-
+<!-- homepage video -->
+<script type="text/javascript">
+  $(window).bind("load", function() {
+  	$('#video-container').load('video.html');
+  });
+</script>
 </body>
 </html>

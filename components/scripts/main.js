@@ -38,6 +38,7 @@
   }
 
   // equial heights for homepage options
+  $('.option1, .option2').setAllToMaxHeight();
   $('#options .desc').setAllToMaxHeight();
   $('.equal-height').setAllToMaxHeight();
 
@@ -67,10 +68,18 @@
       return false;
   });
 
+  // homepage wizards
+  $(".option1, .option2").on('click touchstart',function(e){
+    //console.log("option was clicked!");
+    $(this).parent(".option-container").find(".option-form").slideToggle();
+    return false;
+  });
+
   // responsive reactions
   $(window).resize(function(){
 
     // equial heights for homepage options
+    $('.option1, .option2').setAllToMaxHeight();
     $('#options .desc').setAllToMaxHeight();
     $('.equal-height').setAllToMaxHeight();
 
@@ -146,8 +155,15 @@
 
 
   // equal heights for big dropdowns
-  $('.dropdown').on('show.bs.dropdown mouseenter', function(e){
-    $(".col-color").setAllToMaxHeight();
+  $('.dropdown').on('show.bs.dropdown mouseenter touchstart', function(e){
+    var bigMenu = $(this).find(".dropdown-menu-large");
+    if (window.matchMedia(minWidth).matches) {
+      $(".col-color").removeAttr("style");
+      $(".col-color").setAllToMaxHeight();
+      if (bigMenu[0].scrollHeight < 501) {
+        bigMenu.css("overflow", "hidden");
+      }
+    }
   });
 
   // compare-wizard functionality

@@ -137,9 +137,21 @@
   max-width: 100%;
   margin: 0 15px;
   padding: 20px 0px;
-  @include breakpoint($screen-sm) { width: 720px; }
+  color: lighten($color__dark, 40%);
+  overflow: hidden;
+  @include breakpoint($screen-sm) {
+    width: 720px;
+    max-height: 500px;
+    overflow-y: scroll;
+  }
   @include breakpoint($screen-md) { width: 940px; }
   @include breakpoint($screen-lg) { width: 1140px; }
+
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 
@@ -162,8 +174,8 @@
 .dropdown-menu-large > li ul > li > a:hover,
 .dropdown-menu-large > li ul > li > a:focus {
   text-decoration: none;
-  color: #262626;
-  background-color: #f5f5f5;
+  color: lighten($color__dark, 15%);
+  background-color: lighten($color__dark, 96%);
 }
 .dropdown-menu-large .disabled > a,
 .dropdown-menu-large .disabled > a:hover,
@@ -237,21 +249,74 @@
 .dropdown-large:hover > a:after,
 .dropdown-large:focus > a:after,
 .dropdown-large > a:focus::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    margin-left: -10px;
-    border-width: 10px 10px 0;
-    border-style: solid;
-    border-color: $navbar-default-link-hover-bg transparent;
-    display: block;
-    width: 0;
-    z-index: 9999;
+
+    @include breakpoint($screen-sm) {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      margin-left: -10px;
+      border-width: 10px 10px 0;
+      border-style: solid;
+      border-color: $navbar-default-link-hover-bg transparent;
+      display: block;
+      width: 0;
+      z-index: 9999;
+    }
 }
 
 .col-color:nth-child(even) {
   background-color: #f5f5f5;
-  padding: 20px 0;
-  margin: -20px 0;
+  padding: 20px 15px;
+  @include breakpoint($screen-sm) {
+    padding: 20px 0;
+    margin: -20px 0;
+  }
 }
+
+
+/* News Alerts */
+.dropdown-alert {
+
+margin-bottom: 20px;
+
+.alert-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: $color__secondary;
+
+  a:hover {
+    color: darken($color__secondary, 10%);
+    text-decoration: none;
+  }
+}
+
+.alert-date {
+  font-size: 12px;
+  font-weight: 400;
+  color: lighten($color__dark, 60%);
+  @include icon(calendar-o);
+
+  &::before {
+    width: 15px;
+  }
+}
+
+.alert-body {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: normal;
+
+  a {
+    color: lighten($color__dark, 40%);
+    &:hover {
+      text-decoration: none;
+      color: lighten($color__dark, 15%);
+    }
+  }
+
+}
+
+} // .dropdown-alert

@@ -1,56 +1,307 @@
 <?php include_once('_header.php'); ?>
 
-    <section id="intro">
+    <section id="intro" class="vidbg">
       <div class="container">
         <h2>Registered agent service, entity formations, and corporate compliance.</h2>
         <button type="button" class="btn btn-lg btn-info btn-expert" data-toggle="modal" data-target="#expert-contact-form">Talk to an Expert</button>
       </div><!-- .container -->
+      <div id="video-container"></div>
       <div class="gradient"></div>
+
     </section><!-- .jumbotron -->
 
     <section id="options">
       <div class="container">
+        <div class="option-container">
           <div class="option1">
+            <img src="images/icons/registered_agents.png" alt="Order Registered Agent Services">
             <h2>Order Registered Agent Services</h2>
-            <div class="desc">Registered Agent service for a new or existing entity!</div>
-            <button type="button" class="btn btn-lg btn-success">Get Started</button>
-          </div>
+            <div id="borderright"></div>
+          </div><!-- .option1 -->
+          <div class="ospace"></div>
+          <div class="option-form option1-form">
+            <h4>Only $99/year</h4>
+            <p>As low as $67/per year with multiyear service.</p>
+            <form class="form-inline">
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="AL" selected>Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-success">Order Now!</button>
+            </form>
+          </div><!-- .option-form -->
+        </div><!-- .option-container --><!--
+      --><div class="option-container">
           <div class="option2">
+            <img src="images/icons/llc_corporation.png" alt="Form an LLC or Corporation">
             <h2>Form an LLC or Corporation</h2>
-            <div class="desc">Order a New Corporation, Limited-Liability Company (LLC) or other type of entity!</div>
-            <button type="button" class="btn btn-lg btn-success">Get Started</button>
           </div>
+          <div class="ospace"></div>
+          <div class="option-form option2-form">
+            <h4>Only $99/year</h4>
+            <p>As low as $67/per year with multiyear service.</p>
+            <form class="form-inline">
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="AL" selected>Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-success">Order Now!</button>
+            </form>
+          </div><!-- .option-form -->
+        </div><!-- .option-container -->
+
       </div><!-- .container -->
     </section><!-- .options -->
 
-    <section id="quotes">
-      <div class="container">
-          <h2>Price Quote</h2>
-          <p class="lead">INCORP will beat any competitor’s price on on any product or service guaranteed!</p>
-          <button class="btn btn-lg btn-info">Get Price Quote</button>
-      </div><!-- .container -->
-    </section><!-- .quotes -->
-
     <section id="services">
       <div class="container">
-        <h2 id="blueprice">We offer great services for our customers. Select which service best fits your needs!</h2>
+        <h2 class="hlead">Our Services</h2>
         <div class="services-list">
-          <div class="service"><a href="#">Form LLC or Corporation</a></div>
-          <div class="service"><a href="#">Registered Agent Services</a></div>
-          <div class="service"><a href="#">Order Foreign Qualification Service</a></div>
-          <div class="service"><a href="#">Order DBA (Doing Business As) </a></div>
-          <div class="service"><a href="#">Certificate of Good Standing</a></div>
-          <div class="service"><a href="#">Order Corporate Kit or Seal</a></div>
-          <div class="service"><a href="#">Order Dissolution Service</a></div>
-          <div class="service"><a href="#">Apply for Copyright Protection</a></div>
-          <div class="service"><a href="#">Order Trademark Service</a></div>
+          <div class="service" ontouchstart="this.classList.toggle('hover');">
+          	<div class="service-container">
+          		<div class="front">
+          			<!-- front content -->
+                <img src="images/icons/llc_blue.png" alt="Form LLC or Corporation">
+                <h3>Form LLC or Corporation</h3>
+          		</div>
+          		<div class="back">
+          			<!-- back content -->
+                <h4>Form LLC or Corporation</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          		</div>
+          	</div><!-- .service-container -->
+          </div><!-- .service -->
+
+          <div class="service" ontouchstart="this.classList.toggle('hover');">
+            <div class="service-container">
+              <div class="front">
+                <!-- front content -->
+                <img src="images/icons/registered_agents_blue.png" alt="Registered Agent Services">
+                <h3>Registered Agent Services</h3>
+              </div>
+              <div class="back">
+                <!-- back content -->
+                <h4>Registered Agent Services</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div><!-- .service-container -->
+          </div><!-- .service -->
+
+
+          <div class="service" ontouchstart="this.classList.toggle('hover');">
+          	<div class="service-container">
+          		<div class="front">
+          			<!-- front content -->
+                <img src="images/icons/foreign_services.png" alt="Order Foreign Qualification Service">
+                <h3>Order Foreign Qualification Service</h3>
+          		</div>
+          		<div class="back">
+          			<!-- back content -->
+                <h4>Order Foreign Qualification Service</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          		</div>
+          	</div><!-- .service-container -->
+          </div><!-- .service -->
+
+          <div class="service" ontouchstart="this.classList.toggle('hover');">
+          	<div class="service-container">
+          		<div class="front">
+          			<!-- front content -->
+                <img src="images/icons/dba.png" alt="Order DBA Doing Business As">
+                <h3>Order DBA (Doing Business As)</h3>
+          		</div>
+          		<div class="back">
+          			<!-- back content -->
+                <h4>Order DBA (Doing Business As)</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          		</div>
+          	</div><!-- .service-container -->
+          </div><!-- .service -->
+
+          <div class="service" ontouchstart="this.classList.toggle('hover');">
+          	<div class="service-container">
+          		<div class="front">
+          			<!-- front content -->
+                <img src="images/icons/certificate_good_standing.png" alt="Certificate of Good Standing">
+                <h3>Certificate of Good Standing</h3>
+          		</div>
+          		<div class="back">
+          			<!-- back content -->
+                <h4>Certificate of Good Standing</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          		</div>
+          	</div><!-- .service-container -->
+          </div><!-- .service -->
+
+          <div class="service" ontouchstart="this.classList.toggle('hover');">
+          	<div class="service-container">
+          		<div class="front">
+          			<!-- front content -->
+                <img src="images/icons/corporate_kit.png" alt="Order Corporate Kit or Seal">
+                <h3>Order Corporate Kit or Seal</h3>
+          		</div>
+          		<div class="back">
+          			<!-- back content -->
+                <h4>Order Corporate Kit or Seal</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          		</div>
+          	</div><!-- .service-container -->
+          </div><!-- .service -->
+
+          <div class="service" ontouchstart="this.classList.toggle('hover');">
+          	<div class="service-container">
+          		<div class="front">
+          			<!-- front content -->
+                <img src="images/icons/dissolution_service.png" alt="Order Dissolution Service">
+                <h3>Order Dissolution Service</h3>
+          		</div>
+          		<div class="back">
+          			<!-- back content -->
+                <h4>Order Dissolution Service</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          		</div>
+          	</div><!-- .service-container -->
+          </div><!-- .service -->
+
+          <div class="service" ontouchstart="this.classList.toggle('hover');">
+          	<div class="service-container">
+          		<div class="front">
+          			<!-- front content -->
+                <img src="images/icons/copyright.png" alt="Apply for Copyright Protection">
+                <h3>Apply for Copyright Protection</h3>
+          		</div>
+          		<div class="back">
+          			<!-- back content -->
+                <h4>Apply for Copyright Protection</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          		</div>
+          	</div><!-- .service-container -->
+          </div><!-- .service -->
+
+          <div class="service" ontouchstart="this.classList.toggle('hover');">
+          	<div class="service-container">
+          		<div class="front">
+          			<!-- front content -->
+                <img src="images/icons/trademark.png" alt="Order Trademark Service">
+                <h3>Order Trademark Service</h3>
+          		</div>
+          		<div class="back">
+          			<!-- back content -->
+                <h4>Order Trademark Service</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          		</div>
+          	</div><!-- .service-container -->
+          </div><!-- .service -->
+
         </div>
       </div><!-- .container -->
     </section><!-- .services -->
 
     <section id="testimonials">
       <div class="container">
-        <h2>Client Testimonials</h2>
+        <h2 class="hlead">Client Testimonials</h2>
 
         <div id="testimonials-carousel" class="owl-carousel">
 
@@ -98,5 +349,6 @@
           </form>
       </div><!-- .container -->
     </section><!-- .newsletter -->
+
 
     <?php include_once('_footer.php'); ?>

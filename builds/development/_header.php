@@ -8,6 +8,15 @@
 
     <link rel="stylesheet" href="css/main.css">
 
+    <!--[if lt IE 10]>
+      <script src="js/media.match.min.js"></script>
+      <style>
+        #intro {
+          background-image: url("images/intro.png") !important;
+        }
+      </style>
+    <![endif]-->
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -55,7 +64,10 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Business Services</a>
               <?php include('_dropdown_business.php'); ?>
             </li>
-            <li><a href="#about">About Incorp</a></li>
+            <li class="dropdown dropdown-large">
+              <a href="#about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Incorp</a>
+              <?php include('_dropdown_about.php'); ?>
+            </li>
             <li><a href="#about">Help Center</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="search-toggle">

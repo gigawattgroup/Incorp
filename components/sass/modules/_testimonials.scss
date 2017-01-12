@@ -1,9 +1,17 @@
 #testimonials {
   background: $color__gray;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 65px 0;
   h2 {
     text-align: center;
     padding-bottom: 20px;
+    margin-bottom: 30px;
+    @include breakpoint($screen-md) {
+      margin-bottom: 0;
+    }
   }
   text-align: center;
 
@@ -17,10 +25,15 @@
     padding: 50px;
     text-align: center;
     width: 90%;
+    opacity: 0.8;
     background-color: $color__accent;
     color: $color__light;
     border: none;
     border-radius: 25px;
+    @include breakpoint($screen-md) {
+      margin-top: 57px;
+      margin-left: 57px;
+    }
 
     footer {
       color: inherit;
@@ -29,7 +42,29 @@
       }
     }
 
-    &::after {
+    &::before {
+      content: "";
+      @include breakpoint($screen-md) {
+        content: "“";
+        color: $color__dark;
+        position: absolute;
+        top: -57px;
+        left: -57px;
+        width: 115px;
+        height: 115px;
+        background-color: $color__light;
+        border: 5px solid $color__accent;
+        border-radius: 50%;
+        display: block;
+        font-size: 140px;
+        line-height: 1.2;
+        font-family: arial;
+        font-weight: 700;
+      }
+
+    }
+
+    /*&::after {
         content: "";
         position: absolute;
         bottom: -20px;
@@ -40,9 +75,13 @@
         border-color: $color__accent transparent;
         display: block;
         width: 0;
-    }
+    }*/
 
   } //blockquote
+
+  .owl-dots .owl-dot span {
+    background: darken($color__gray, 40%);
+  }
 
 
 } // #testimonials
