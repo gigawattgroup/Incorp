@@ -155,9 +155,14 @@
 
 
   // equal heights for big dropdowns
-  $('.dropdown').on('show.bs.dropdown mouseenter', function(e){
+  $('.dropdown').on('show.bs.dropdown mouseenter touchstart', function(e){
+    var bigMenu = $(this).find(".dropdown-menu-large");
     if (window.matchMedia(minWidth).matches) {
+      $(".col-color").removeAttr("style");
       $(".col-color").setAllToMaxHeight();
+      if (bigMenu[0].scrollHeight < 501) {
+        bigMenu.css("overflow", "hidden");
+      }
     }
   });
 
